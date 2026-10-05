@@ -1,0 +1,1541 @@
+[
+  {
+    "round": 1,
+    "model": "yolo26n-seg.pt",
+    "start": "2026-10-05T10:00:30.577796+00:00",
+    "gpu_before": {
+      "timestamp": "2026-10-05T10:00:30.506057+00:00",
+      "state": {
+        "returncode": 0,
+        "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 191 MiB, 0 %, 65, 31.53 W, 585 MHz, 5000 MHz\n",
+        "stderr": ""
+      },
+      "processes": {
+        "returncode": 0,
+        "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 188 MiB\n",
+        "stderr": ""
+      }
+    },
+    "contaminated": false,
+    "load_seconds": 0.2443698588758707,
+    "baseline_allocated_mib": 42.51416015625,
+    "baseline_reserved_mib": 1350.0,
+    "gpu_samples": [
+      {
+        "timestamp": "2026-10-05T10:00:32.031457+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 75 %, 66, 39.44 W, 1515 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:00:38.415140+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 0 %, 66, 32.11 W, 975 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:00:45.047250+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 0 %, 66, 32.29 W, 975 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:00:48.532616+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 19 %, 66, 32.97 W, 810 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:00:49.284791+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 22 %, 66, 32.11 W, 675 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:00:50.087576+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 30 %, 66, 31.92 W, 585 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:00:54.942712+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 0 %, 66, 31.82 W, 660 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:00:59.525726+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 0 %, 66, 31.82 W, 585 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:01:04.842132+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 0 %, 66, 32.39 W, 1005 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:01:09.916948+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 0 %, 66, 32.50 W, 1005 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      }
+    ],
+    "peak_gpu_allocated_mib": 1043.1328125,
+    "peak_gpu_reserved_mib": 1828.0,
+    "status": "PASS",
+    "end": "2026-10-05T10:01:15.231750+00:00",
+    "gpu_after": {
+      "timestamp": "2026-10-05T10:01:15.231771+00:00",
+      "state": {
+        "returncode": 0,
+        "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1987 MiB, 0 %, 66, 32.68 W, 1050 MHz, 5000 MHz\n",
+        "stderr": ""
+      },
+      "processes": {
+        "returncode": 0,
+        "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1984 MiB\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "round": 1,
+    "model": "yolov8n-seg.pt",
+    "start": "2026-10-05T10:01:17.776001+00:00",
+    "gpu_before": {
+      "timestamp": "2026-10-05T10:01:17.701012+00:00",
+      "state": {
+        "returncode": 0,
+        "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 191 MiB, 0 %, 66, 31.82 W, 585 MHz, 5000 MHz\n",
+        "stderr": ""
+      },
+      "processes": {
+        "returncode": 0,
+        "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 188 MiB\n",
+        "stderr": ""
+      }
+    },
+    "contaminated": false,
+    "load_seconds": 0.14571246597915888,
+    "baseline_allocated_mib": 45.1005859375,
+    "baseline_reserved_mib": 1086.0,
+    "gpu_samples": [
+      {
+        "timestamp": "2026-10-05T10:01:19.247935+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1245 MiB, 61 %, 67, 39.15 W, 1560 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1242 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:01:26.157016+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1245 MiB, 0 %, 67, 32.78 W, 1020 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1242 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:01:34.196074+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 0 %, 68, 39.71 W, 1515 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:01:38.152145+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 23 %, 68, 32.78 W, 735 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:01:39.022964+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 26 %, 67, 32.29 W, 630 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:01:39.932735+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 25 %, 67, 32.31 W, 585 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:01:45.448252+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 0 %, 67, 32.21 W, 750 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:01:51.963509+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 0 %, 67, 33.36 W, 1065 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:01:58.074340+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 0 %, 67, 32.50 W, 960 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:02:04.266391+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 0 %, 67, 32.79 W, 1020 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      }
+    ],
+    "peak_gpu_allocated_mib": 1117.08544921875,
+    "peak_gpu_reserved_mib": 1598.0,
+    "status": "PASS",
+    "end": "2026-10-05T10:02:10.635656+00:00",
+    "gpu_after": {
+      "timestamp": "2026-10-05T10:02:10.635675+00:00",
+      "state": {
+        "returncode": 0,
+        "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 0 %, 67, 32.11 W, 585 MHz, 5000 MHz\n",
+        "stderr": ""
+      },
+      "processes": {
+        "returncode": 0,
+        "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "round": 1,
+    "model": "yolo11n-seg.pt",
+    "start": "2026-10-05T10:02:13.213961+00:00",
+    "gpu_before": {
+      "timestamp": "2026-10-05T10:02:13.125364+00:00",
+      "state": {
+        "returncode": 0,
+        "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 191 MiB, 0 %, 66, 32.19 W, 585 MHz, 5000 MHz\n",
+        "stderr": ""
+      },
+      "processes": {
+        "returncode": 0,
+        "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 188 MiB\n",
+        "stderr": ""
+      }
+    },
+    "contaminated": false,
+    "load_seconds": 0.1758262817747891,
+    "baseline_allocated_mib": 43.0625,
+    "baseline_reserved_mib": 1426.0,
+    "gpu_samples": [
+      {
+        "timestamp": "2026-10-05T10:02:14.679676+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1585 MiB, 77 %, 68, 39.53 W, 1560 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1582 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:02:21.437714+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1585 MiB, 0 %, 67, 33.55 W, 1095 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1582 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:02:28.988413+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2461 MiB, 0 %, 67, 35.01 W, 1260 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2458 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:02:32.879298+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2461 MiB, 20 %, 67, 32.78 W, 585 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2458 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:02:33.771634+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2461 MiB, 20 %, 67, 32.87 W, 585 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2458 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:02:34.782723+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2461 MiB, 11 %, 67, 32.41 W, 585 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2458 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:02:40.483045+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2461 MiB, 0 %, 67, 32.31 W, 780 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2458 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:02:46.568163+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2461 MiB, 0 %, 67, 32.21 W, 615 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2458 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:02:53.601450+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2461 MiB, 0 %, 68, 41.65 W, 1590 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2458 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:03:00.347354+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2915 MiB, 0 %, 68, 32.41 W, 660 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2912 MiB\n",
+          "stderr": ""
+        }
+      }
+    ],
+    "peak_gpu_allocated_mib": 1030.0,
+    "peak_gpu_reserved_mib": 3226.0,
+    "status": "PASS",
+    "end": "2026-10-05T10:03:06.972268+00:00",
+    "gpu_after": {
+      "timestamp": "2026-10-05T10:03:06.972312+00:00",
+      "state": {
+        "returncode": 0,
+        "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 3385 MiB, 0 %, 67, 32.70 W, 975 MHz, 5000 MHz\n",
+        "stderr": ""
+      },
+      "processes": {
+        "returncode": 0,
+        "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 3382 MiB\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "round": 2,
+    "model": "yolov8n-seg.pt",
+    "start": "2026-10-05T10:03:09.582473+00:00",
+    "gpu_before": {
+      "timestamp": "2026-10-05T10:03:09.499173+00:00",
+      "state": {
+        "returncode": 0,
+        "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 191 MiB, 0 %, 67, 32.29 W, 585 MHz, 5000 MHz\n",
+        "stderr": ""
+      },
+      "processes": {
+        "returncode": 0,
+        "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 188 MiB\n",
+        "stderr": ""
+      }
+    },
+    "contaminated": false,
+    "load_seconds": 0.1731542069464922,
+    "baseline_allocated_mib": 45.1005859375,
+    "baseline_reserved_mib": 1086.0,
+    "gpu_samples": [
+      {
+        "timestamp": "2026-10-05T10:03:11.085363+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1245 MiB, 48 %, 69, 65.30 W, 1560 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1242 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:03:17.948810+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1245 MiB, 0 %, 68, 36.16 W, 1335 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1242 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:03:26.115996+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 0 %, 68, 38.37 W, 1440 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:03:30.312971+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 20 %, 68, 32.79 W, 825 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:03:31.292932+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 28 %, 68, 32.50 W, 585 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:03:32.297817+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 22 %, 68, 32.50 W, 585 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:03:37.991688+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 0 %, 68, 32.41 W, 585 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:03:44.622301+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 0 %, 68, 34.62 W, 1185 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:03:51.012786+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 0 %, 68, 32.50 W, 720 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:03:57.380529+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 0 %, 68, 38.10 W, 945 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      }
+    ],
+    "peak_gpu_allocated_mib": 1117.08544921875,
+    "peak_gpu_reserved_mib": 1598.0,
+    "status": "PASS",
+    "end": "2026-10-05T10:04:03.810649+00:00",
+    "gpu_after": {
+      "timestamp": "2026-10-05T10:04:03.810669+00:00",
+      "state": {
+        "returncode": 0,
+        "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 0 %, 68, 36.06 W, 1335 MHz, 5000 MHz\n",
+        "stderr": ""
+      },
+      "processes": {
+        "returncode": 0,
+        "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "round": 2,
+    "model": "yolo11n-seg.pt",
+    "start": "2026-10-05T10:04:06.375859+00:00",
+    "gpu_before": {
+      "timestamp": "2026-10-05T10:04:06.311499+00:00",
+      "state": {
+        "returncode": 0,
+        "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 191 MiB, 0 %, 67, 32.21 W, 585 MHz, 5000 MHz\n",
+        "stderr": ""
+      },
+      "processes": {
+        "returncode": 0,
+        "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 188 MiB\n",
+        "stderr": ""
+      }
+    },
+    "contaminated": false,
+    "load_seconds": 0.29778904211707413,
+    "baseline_allocated_mib": 43.0625,
+    "baseline_reserved_mib": 1426.0,
+    "gpu_samples": [
+      {
+        "timestamp": "2026-10-05T10:04:08.024153+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1585 MiB, 73 %, 69, 65.24 W, 1560 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1582 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:04:14.745404+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1585 MiB, 0 %, 68, 34.04 W, 1125 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1582 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:04:22.056832+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2461 MiB, 0 %, 68, 35.67 W, 1305 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2458 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:04:25.710891+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2461 MiB, 18 %, 68, 34.23 W, 1095 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2458 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:04:26.679823+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2461 MiB, 25 %, 68, 36.37 W, 585 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2458 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:04:27.696437+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2461 MiB, 25 %, 68, 35.01 W, 585 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2458 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:04:33.597969+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2461 MiB, 0 %, 68, 33.07 W, 1005 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2458 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:04:39.721677+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2461 MiB, 0 %, 68, 32.60 W, 840 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2458 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:04:46.892403+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2461 MiB, 0 %, 68, 39.83 W, 1500 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2458 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:04:53.735013+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2915 MiB, 0 %, 69, 39.15 W, 1470 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2912 MiB\n",
+          "stderr": ""
+        }
+      }
+    ],
+    "peak_gpu_allocated_mib": 1030.0,
+    "peak_gpu_reserved_mib": 3226.0,
+    "status": "PASS",
+    "end": "2026-10-05T10:05:00.288061+00:00",
+    "gpu_after": {
+      "timestamp": "2026-10-05T10:05:00.288084+00:00",
+      "state": {
+        "returncode": 0,
+        "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 3385 MiB, 0 %, 68, 36.16 W, 1320 MHz, 5000 MHz\n",
+        "stderr": ""
+      },
+      "processes": {
+        "returncode": 0,
+        "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 3382 MiB\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "round": 2,
+    "model": "yolo26n-seg.pt",
+    "start": "2026-10-05T10:05:02.889782+00:00",
+    "gpu_before": {
+      "timestamp": "2026-10-05T10:05:02.819018+00:00",
+      "state": {
+        "returncode": 0,
+        "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 191 MiB, 0 %, 68, 32.87 W, 585 MHz, 5000 MHz\n",
+        "stderr": ""
+      },
+      "processes": {
+        "returncode": 0,
+        "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 188 MiB\n",
+        "stderr": ""
+      }
+    },
+    "contaminated": false,
+    "load_seconds": 0.26818649796769023,
+    "baseline_allocated_mib": 42.51416015625,
+    "baseline_reserved_mib": 1350.0,
+    "gpu_samples": [
+      {
+        "timestamp": "2026-10-05T10:05:04.351230+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 76 %, 69, 75.52 W, 1485 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:05:10.843634+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 0 %, 68, 32.50 W, 600 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:05:17.520624+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 0 %, 68, 35.96 W, 1320 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:05:20.934682+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 27 %, 68, 42.91 W, 750 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:05:21.641648+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 20 %, 68, 35.30 W, 750 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:05:22.405092+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 30 %, 68, 35.57 W, 585 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:05:27.219327+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 0 %, 68, 32.41 W, 630 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:05:31.821341+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 0 %, 68, 32.41 W, 585 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:05:37.265541+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 0 %, 68, 32.50 W, 750 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:05:42.509759+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 0 %, 68, 32.58 W, 810 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      }
+    ],
+    "peak_gpu_allocated_mib": 1043.1328125,
+    "peak_gpu_reserved_mib": 1828.0,
+    "status": "PASS",
+    "end": "2026-10-05T10:05:48.115451+00:00",
+    "gpu_after": {
+      "timestamp": "2026-10-05T10:05:48.115472+00:00",
+      "state": {
+        "returncode": 0,
+        "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1987 MiB, 0 %, 68, 33.46 W, 1065 MHz, 5000 MHz\n",
+        "stderr": ""
+      },
+      "processes": {
+        "returncode": 0,
+        "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1984 MiB\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "round": 3,
+    "model": "yolo11n-seg.pt",
+    "start": "2026-10-05T10:05:50.665030+00:00",
+    "gpu_before": {
+      "timestamp": "2026-10-05T10:05:50.579965+00:00",
+      "state": {
+        "returncode": 0,
+        "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 191 MiB, 0 %, 67, 32.31 W, 585 MHz, 5000 MHz\n",
+        "stderr": ""
+      },
+      "processes": {
+        "returncode": 0,
+        "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 188 MiB\n",
+        "stderr": ""
+      }
+    },
+    "contaminated": false,
+    "load_seconds": 0.27502015605568886,
+    "baseline_allocated_mib": 43.0625,
+    "baseline_reserved_mib": 1426.0,
+    "gpu_samples": [
+      {
+        "timestamp": "2026-10-05T10:05:52.288969+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1585 MiB, 77 %, 69, 40.00 W, 1545 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1582 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:05:59.321788+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1585 MiB, 0 %, 68, 32.41 W, 585 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1582 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:06:06.805654+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2461 MiB, 0 %, 68, 37.03 W, 1380 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2458 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:06:10.558909+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2461 MiB, 16 %, 68, 34.14 W, 1110 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2458 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:06:11.541915+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2461 MiB, 25 %, 68, 44.63 W, 600 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2458 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:06:12.630731+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2461 MiB, 13 %, 68, 32.97 W, 585 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2458 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:06:18.399715+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2461 MiB, 0 %, 68, 32.41 W, 690 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2458 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:06:24.461213+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2461 MiB, 0 %, 67, 32.41 W, 705 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2458 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:06:31.531960+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2461 MiB, 0 %, 68, 36.74 W, 1365 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2458 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:06:38.438208+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 2915 MiB, 0 %, 68, 36.94 W, 1380 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 2912 MiB\n",
+          "stderr": ""
+        }
+      }
+    ],
+    "peak_gpu_allocated_mib": 1030.0,
+    "peak_gpu_reserved_mib": 3226.0,
+    "status": "PASS",
+    "end": "2026-10-05T10:06:45.115636+00:00",
+    "gpu_after": {
+      "timestamp": "2026-10-05T10:06:45.115654+00:00",
+      "state": {
+        "returncode": 0,
+        "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 3385 MiB, 0 %, 68, 35.96 W, 1320 MHz, 5000 MHz\n",
+        "stderr": ""
+      },
+      "processes": {
+        "returncode": 0,
+        "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 3382 MiB\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "round": 3,
+    "model": "yolo26n-seg.pt",
+    "start": "2026-10-05T10:06:47.648678+00:00",
+    "gpu_before": {
+      "timestamp": "2026-10-05T10:06:47.579816+00:00",
+      "state": {
+        "returncode": 0,
+        "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 191 MiB, 0 %, 68, 32.70 W, 585 MHz, 5000 MHz\n",
+        "stderr": ""
+      },
+      "processes": {
+        "returncode": 0,
+        "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 188 MiB\n",
+        "stderr": ""
+      }
+    },
+    "contaminated": false,
+    "load_seconds": 0.3038824899122119,
+    "baseline_allocated_mib": 42.51416015625,
+    "baseline_reserved_mib": 1350.0,
+    "gpu_samples": [
+      {
+        "timestamp": "2026-10-05T10:06:49.198735+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 71 %, 69, 77.78 W, 1500 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:06:55.579669+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 0 %, 68, 32.78 W, 915 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:07:02.346011+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 0 %, 68, 32.70 W, 840 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:07:05.850748+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 29 %, 68, 34.14 W, 585 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:07:06.588624+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 27 %, 68, 34.62 W, 585 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:07:07.396159+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 21 %, 68, 32.79 W, 585 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:07:12.332152+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 0 %, 68, 32.50 W, 660 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:07:16.958365+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 0 %, 68, 32.31 W, 585 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:07:22.400045+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 0 %, 68, 32.58 W, 930 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:07:27.610967+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1509 MiB, 0 %, 67, 32.50 W, 900 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1506 MiB\n",
+          "stderr": ""
+        }
+      }
+    ],
+    "peak_gpu_allocated_mib": 1043.1328125,
+    "peak_gpu_reserved_mib": 1828.0,
+    "status": "PASS",
+    "end": "2026-10-05T10:07:32.935043+00:00",
+    "gpu_after": {
+      "timestamp": "2026-10-05T10:07:32.935062+00:00",
+      "state": {
+        "returncode": 0,
+        "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1987 MiB, 0 %, 68, 32.97 W, 1035 MHz, 5000 MHz\n",
+        "stderr": ""
+      },
+      "processes": {
+        "returncode": 0,
+        "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1984 MiB\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "round": 3,
+    "model": "yolov8n-seg.pt",
+    "start": "2026-10-05T10:07:35.470556+00:00",
+    "gpu_before": {
+      "timestamp": "2026-10-05T10:07:35.399046+00:00",
+      "state": {
+        "returncode": 0,
+        "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 191 MiB, 0 %, 67, 32.19 W, 585 MHz, 5000 MHz\n",
+        "stderr": ""
+      },
+      "processes": {
+        "returncode": 0,
+        "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 188 MiB\n",
+        "stderr": ""
+      }
+    },
+    "contaminated": false,
+    "load_seconds": 0.18703722814098,
+    "baseline_allocated_mib": 45.1005859375,
+    "baseline_reserved_mib": 1086.0,
+    "gpu_samples": [
+      {
+        "timestamp": "2026-10-05T10:07:37.001960+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1245 MiB, 54 %, 69, 59.24 W, 1560 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1242 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:07:43.982203+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1245 MiB, 0 %, 68, 33.18 W, 1035 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1242 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:07:52.051710+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 0 %, 69, 38.76 W, 1455 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:07:56.067414+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 19 %, 69, 34.72 W, 1125 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:07:56.983019+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 19 %, 69, 36.55 W, 660 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:07:57.916118+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 23 %, 68, 42.78 W, 585 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:08:03.504881+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 0 %, 68, 32.68 W, 840 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:08:10.059328+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 0 %, 68, 34.62 W, 1185 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:08:16.153039+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 0 %, 68, 32.60 W, 810 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      },
+      {
+        "timestamp": "2026-10-05T10:08:22.279844+00:00",
+        "state": {
+          "returncode": 0,
+          "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 0 %, 68, 35.01 W, 960 MHz, 5000 MHz\n",
+          "stderr": ""
+        },
+        "processes": {
+          "returncode": 0,
+          "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+          "stderr": ""
+        }
+      }
+    ],
+    "peak_gpu_allocated_mib": 1117.08544921875,
+    "peak_gpu_reserved_mib": 1598.0,
+    "status": "PASS",
+    "end": "2026-10-05T10:08:28.619565+00:00",
+    "gpu_after": {
+      "timestamp": "2026-10-05T10:08:28.619586+00:00",
+      "state": {
+        "returncode": 0,
+        "stdout": "uuid, name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz]\nGPU-568de064-e614-a45c-96c3-dbd80b8db026, Tesla T4, 580.178.04, 15360 MiB, 1757 MiB, 0 %, 68, 35.28 W, 1260 MHz, 5000 MHz\n",
+        "stderr": ""
+      },
+      "processes": {
+        "returncode": 0,
+        "stdout": "509592, /home/skyaidev/folk/Human-Body-Extraction/.venv/bin/python, 1754 MiB\n",
+        "stderr": ""
+      }
+    }
+  }
+]

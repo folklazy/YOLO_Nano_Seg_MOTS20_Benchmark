@@ -1,0 +1,10 @@
+{
+  "source_sha256": {
+    "YOLO_Nano_Seg_MOTS20_Benchmark/src/report_nano.py": "17f43eb0f683a162d869b6d8dce8265532431f3fca911601d5aad5c9a7199f58",
+    "YOLO_Nano_Seg_MOTS20_Benchmark/src/validate_nano_completion.py": "1ea42920ee3b96a9d3e35da76525fc325f7af3c71c0bb816ced975e43fc6e821",
+    "YOLO_Instance_Segmentation_MOTS20_Scaling_Study/src/build_qualitative_comparisons.py": "d5f9bdb8d44ee498783488412be5e5bb5806c53ef3747b32c18d4e2c179e7b63",
+    "YOLO_Instance_Segmentation_MOTS20_Scaling_Study/scripts/validate_documentation_redesign.py": "c73d1ab671804b0c40f032cbf6e24e24d1d30ad45053c8183d5024013538d231"
+  },
+  "inference_rerun": false,
+  "measured_values_changed": false
+}

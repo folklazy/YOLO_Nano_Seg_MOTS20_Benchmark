@@ -4,18 +4,106 @@
   "repository": "YOLO_Nano_Seg_MOTS20_Benchmark",
   "experiment": "YOLO_Nano_Seg_MOTS20_Benchmark",
   "tier": "nano",
-  "source_run_ids": [],
-  "source_artifact_paths": [],
-  "source_artifact_sha256": {},
-  "evaluator_hash": null,
+  "source_run_ids": [
+    "benchmark-20261005T083307Z"
+  ],
+  "source_artifact_paths": [
+    "metrics/benchmark-20261005T083307Z/per_model.csv",
+    "metrics/benchmark-20261005T083307Z/per_sequence.csv",
+    "metrics/benchmark-20261005T083307Z/preflight_maxdet.csv",
+    "metrics/benchmark-20261005T083307Z/protocol_consistency.csv",
+    "timing/benchmark-20261005T083307Z/clean_repetition/summary.csv",
+    "timing/benchmark-20261005T083307Z/clean_repetition/runs.json",
+    "configs/benchmark.yaml",
+    "EXPERIMENT_PROTOCOL.md",
+    "manifests/environment.json",
+    "manifests/checkpoint_manifest.json",
+    "manifests/source_manifest.json",
+    "manifests/dataset_manifest.json",
+    "manifests/benchmark-20261005T083307Z_full_freeze.json",
+    "manifests/benchmark-20261005T083307Z_input_archive.json",
+    "manifests/benchmark-20261005T083307Z_prediction_hashes.json",
+    "predictions/benchmark-20261005T083307Z/accuracy/yolo26n-seg/metadata.json",
+    "predictions/benchmark-20261005T083307Z/accuracy/yolo11n-seg/metadata.json",
+    "predictions/benchmark-20261005T083307Z/accuracy/yolov8n-seg/metadata.json"
+  ],
+  "source_artifact_sha256": {
+    "metrics/benchmark-20261005T083307Z/per_model.csv": "5c726a236e374d4ee50007036c5837d1caee1e024c731eb1055047a9ceb1b6aa",
+    "metrics/benchmark-20261005T083307Z/per_sequence.csv": "3c45ef866ba9deb96c4ff9bd908d2aeb7e53f8172b9523247da89a7b5281028a",
+    "metrics/benchmark-20261005T083307Z/preflight_maxdet.csv": "60b1b4a45838beb2b81530ebec34698293ee70646ce697110d80914e7aa735b4",
+    "metrics/benchmark-20261005T083307Z/protocol_consistency.csv": "a1dec6975393feb48c5573dd9d420145c8c6472bf6d0bc41518fc9afab0b92d8",
+    "timing/benchmark-20261005T083307Z/clean_repetition/summary.csv": "fb019b3569eaa44d41db82476755ca0b0479c1abc47105b12c78580fdbcf266b",
+    "timing/benchmark-20261005T083307Z/clean_repetition/runs.json": "718570e504a1ba58f7715205753d1d555f4a3092db21204900be1a2ac41fa3a2",
+    "configs/benchmark.yaml": "d80d3fb98094f8e52a04334635d83e7d7b0d3cf4e4ad93678a46aa747cf58e2a",
+    "EXPERIMENT_PROTOCOL.md": "2285e4615b32df4a6f902a0da30fcf09aa590ede07d31677c485538c232d9afb",
+    "manifests/environment.json": "d82a9c8a030fcc3efe02d898ed470f9026c00b14825dcb90437ef991c9703257",
+    "manifests/checkpoint_manifest.json": "f4be45f277c6641e6512c6e55efd2ad2649aedd2c1d6a19b36d751be4cb94efc",
+    "manifests/source_manifest.json": "b8012b1346be4dbd08782159ac51cf8547dc7c6313f1ffacddfd1834747b9d6b",
+    "manifests/dataset_manifest.json": "4c5c49860710914f7a0ed817b060a44dc4fbd52083080da21556634fb4f5f3c2",
+    "manifests/benchmark-20261005T083307Z_full_freeze.json": "a7aa876f9687e185ecc553ac3a39ea220a1bcbcf3a0e74148e46aa27625d395c",
+    "manifests/benchmark-20261005T083307Z_input_archive.json": "5e72f930c01d96b1c2b2d6781f154159a022d5b0450731b2eaf7dd22c1707c1b",
+    "manifests/benchmark-20261005T083307Z_prediction_hashes.json": "c33e96da69b62a955542ddf3a8c8e415651a1551bfd9dc6c12665e75a17e27c9",
+    "predictions/benchmark-20261005T083307Z/accuracy/yolo26n-seg/metadata.json": "c76c1faf5b5c9a0d44c1fd144cff4beaf9916e99ca275c24029d9fb69603ee25",
+    "predictions/benchmark-20261005T083307Z/accuracy/yolo11n-seg/metadata.json": "9d5e12fe8591bc179d413ada3a4cd3712e2645f1dcdbb9d2d3a7d9b0c4d2f719",
+    "predictions/benchmark-20261005T083307Z/accuracy/yolov8n-seg/metadata.json": "003a02f2a87069756b3ceeba8091057691c761f0da12ef61a6ab945619ee1334"
+  },
+  "evaluator_hash": {
+    "src/frozen_pilot/metrics.py": "3f39f8bed8d62677ea1f6fbdce4415e04ccaede8b0ae0425fd63f78594980721",
+    "src/frozen_pilot/mots.py": "01e4a750d8ed6bd1d0002a7b906f351ff9d7b59d3f6e31db633cd4b463b0f51d"
+  },
   "config_hash": "d80d3fb98094f8e52a04334635d83e7d7b0d3cf4e4ad93678a46aa747cf58e2a",
-  "protocol_hash": "372738772d24a114d7118fe6c5ea481631b7263777c5bc4059311dd28d0847bf",
-  "dataset_manifest_hash": "43cd08407a5511877784dfde3d112f37b7db35a855c2bcd4f6ebccd274f91170",
-  "standardization_timestamp": "2026-10-02T05:22:22.224075+00:00",
+  "protocol_hash": "2285e4615b32df4a6f902a0da30fcf09aa590ede07d31677c485538c232d9afb",
+  "dataset_manifest_hash": "4c5c49860710914f7a0ed817b060a44dc4fbd52083080da21556634fb4f5f3c2",
+  "standardization_timestamp": "2026-10-05T10:08:44.169467+00:00",
   "inference_rerun": false,
   "metrics_recalculated": false,
-  "historical_documents_archived": [],
+  "historical_documents_archived": [
+    {
+      "original": "README.md",
+      "archive": "reports/archive/README.md.pre-nano-benchmark-20261005T083307Z",
+      "sha256": "0bd022ed78a55b448cdb67af928d13573a69fb1d0877aaa63bc01f6ae6aa4bc9"
+    },
+    {
+      "original": "REPORT.md",
+      "archive": "reports/archive/REPORT.md.pre-nano-benchmark-20261005T083307Z",
+      "sha256": "8c14c14c3a25af7b8f418c5805aa1db77976657bf6c104b232433a71d0de2c3d"
+    },
+    {
+      "original": "RESULTS_SUMMARY_TH.md",
+      "archive": "reports/archive/RESULTS_SUMMARY_TH.md.pre-nano-benchmark-20261005T083307Z",
+      "sha256": "48e8e0599c76af7e12fca8e6490dfbc11f06c4cae0dd253af19148e39e7ebe46"
+    },
+    {
+      "original": "PRESENTATION_SUMMARY_TH.md",
+      "archive": "reports/archive/PRESENTATION_SUMMARY_TH.md.pre-nano-benchmark-20261005T083307Z",
+      "sha256": "7329503f19670352a6e301ab5424d39a931359fb091e198dc4c536d87f1a0397"
+    },
+    {
+      "original": "EXPERIMENT_PROTOCOL.md",
+      "archive": "reports/archive/EXPERIMENT_PROTOCOL.md.pre-nano-benchmark-20261005T083307Z",
+      "sha256": "372738772d24a114d7118fe6c5ea481631b7263777c5bc4059311dd28d0847bf"
+    },
+    {
+      "original": "configs/benchmark.yaml",
+      "archive": "reports/archive/configs__benchmark.yaml.pre-nano-benchmark-20261005T083307Z",
+      "sha256": "d80d3fb98094f8e52a04334635d83e7d7b0d3cf4e4ad93678a46aa747cf58e2a"
+    },
+    {
+      "original": "manifests/environment.json",
+      "archive": "reports/archive/manifests__environment.json.pre-nano-benchmark-20261005T083307Z",
+      "sha256": "4be655dd98646382422a1e654b566ee841568ed25e51f849c9869968f4b218c0"
+    },
+    {
+      "original": "manifests/STANDARDIZATION.json",
+      "archive": "reports/archive/manifests__STANDARDIZATION.json.pre-nano-benchmark-20261005T083307Z",
+      "sha256": "0ab880a103908b19b7332dee913e939c8555f13c9ff358d2bd324b7002248346"
+    }
+  ],
   "notes": [
-    "Setup-only; NOT_RUN. Environment is readiness inspection, not a benchmark run capture. Exact evaluator reuse and per-tier preflight are required after explicit authorization. No checkpoint download or inference performed."
+    "New Nano experiment, not a rerun. Accuracy calculated once from saved lossless predictions. Canonical conversion preserves structured numeric strings.",
+    "metrics_recalculated=False refers to normalization; independent arithmetic/statistics verification does not replace measured results.",
+    "Primary timing uses only three clean rounds/model. Reserved VRAM and load/baseline records remain in source timing summary.",
+    "Observed run warnings are audited before final publication; no package changes.",
+    "Current master templates govern quantitative RESULTS and visual/qualitative PRESENTATION after every Nano model and all clean timing finish. Frozen measurement protocol unchanged."
   ]
 }

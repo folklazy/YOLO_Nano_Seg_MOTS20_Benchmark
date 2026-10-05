@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "models": [
+    {
+      "model": "yolo26n-seg.pt",
+      "frames": 2862,
+      "status": "PASS",
+      "max_post_nms_candidates": 266,
+      "saved_predictions": 359792,
+      "finite_outputs": true,
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ]
+    },
+    {
+      "model": "yolo11n-seg.pt",
+      "frames": 2862,
+      "status": "PASS",
+      "max_post_nms_candidates": 273,
+      "saved_predictions": 446071,
+      "finite_outputs": true,
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ]
+    },
+    {
+      "model": "yolov8n-seg.pt",
+      "frames": 2862,
+      "status": "PASS",
+      "max_post_nms_candidates": 295,
+      "saved_predictions": 439476,
+      "finite_outputs": true,
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ]
+    }
+  ],
+  "no_inference_rerun": true
+}

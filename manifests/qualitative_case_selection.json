@@ -1,0 +1,22 @@
+[
+  {
+    "sequence": "MOTS20-02",
+    "frame": 600,
+    "reason": "accuracy leader additional matched instance, with remaining errors"
+  },
+  {
+    "sequence": "MOTS20-09",
+    "frame": 263,
+    "reason": "common unmatched GT and false positives"
+  },
+  {
+    "sequence": "MOTS20-02",
+    "frame": 300,
+    "reason": "higher recall with extra unmatched predictions"
+  },
+  {
+    "sequence": "MOTS20-09",
+    "frame": 1,
+    "reason": "all valid GT matched, differing false positives; closest-pair check"
+  }
+]

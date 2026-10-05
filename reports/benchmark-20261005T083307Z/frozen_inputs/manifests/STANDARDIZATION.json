@@ -1,0 +1,21 @@
+{
+  "study_id": "yolo_instance_segmentation_mots20_scaling",
+  "schema_version": "1.0",
+  "repository": "YOLO_Nano_Seg_MOTS20_Benchmark",
+  "experiment": "YOLO_Nano_Seg_MOTS20_Benchmark",
+  "tier": "nano",
+  "source_run_ids": [],
+  "source_artifact_paths": [],
+  "source_artifact_sha256": {},
+  "evaluator_hash": null,
+  "config_hash": "d80d3fb98094f8e52a04334635d83e7d7b0d3cf4e4ad93678a46aa747cf58e2a",
+  "protocol_hash": "372738772d24a114d7118fe6c5ea481631b7263777c5bc4059311dd28d0847bf",
+  "dataset_manifest_hash": "43cd08407a5511877784dfde3d112f37b7db35a855c2bcd4f6ebccd274f91170",
+  "standardization_timestamp": "2026-10-02T05:22:22.224075+00:00",
+  "inference_rerun": false,
+  "metrics_recalculated": false,
+  "historical_documents_archived": [],
+  "notes": [
+    "Setup-only; NOT_RUN. Environment is readiness inspection, not a benchmark run capture. Exact evaluator reuse and per-tier preflight are required after explicit authorization. No checkpoint download or inference performed."
+  ]
+}

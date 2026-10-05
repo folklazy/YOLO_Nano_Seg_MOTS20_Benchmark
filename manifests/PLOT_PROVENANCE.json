@@ -1,0 +1,12 @@
+{
+  "source_sha256": "a1562e54263b2c8e4e13630d3cf1c6e3f45659e92dc57285cf902b6fe1126787",
+  "generator_sha256": "17f43eb0f683a162d869b6d8dce8265532431f3fca911601d5aad5c9a7199f58",
+  "outputs": {
+    "outputs/plots/01_mask_map50_95.png": "43a7de1759ea01fbc09061ef963ad35c8514ff7666b5a3851f79661145117809",
+    "outputs/plots/02_ap50_ap75.png": "1364158540a680be2c7dca0e732d1c58b06e7437e0bd7c731d55d84d27109803",
+    "outputs/plots/03_inference_latency.png": "4b528ef1480866d6740de00060de961d4afb41e49c426f32f702052823800eae",
+    "outputs/plots/04_pipeline_fps.png": "3a2f90925cb7df4a3ca8b1a85ea5d62fe8d165900a6d8186bdbc568e8f6747d9",
+    "outputs/plots/05_peak_vram.png": "2ee24e31d07c42325b777400278a50cc53cf294cd22df6d0e166ecef67d317f1",
+    "outputs/plots/06_accuracy_vs_latency.png": "6b808c8a6af19ea1d48e100f7e4d9daf2ece8149ecc08b48e0691d475b13ac53"
+  }
+}

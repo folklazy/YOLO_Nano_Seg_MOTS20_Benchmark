@@ -1,0 +1,49 @@
+{
+  "run_id": "benchmark-20261005T083307Z",
+  "timestamp": "2026-10-05T08:33:07.046038+00:00",
+  "archived_setup_documents": [
+    {
+      "original": "README.md",
+      "archive": "reports/archive/README.md.pre-nano-benchmark-20261005T083307Z",
+      "sha256": "0bd022ed78a55b448cdb67af928d13573a69fb1d0877aaa63bc01f6ae6aa4bc9"
+    },
+    {
+      "original": "REPORT.md",
+      "archive": "reports/archive/REPORT.md.pre-nano-benchmark-20261005T083307Z",
+      "sha256": "8c14c14c3a25af7b8f418c5805aa1db77976657bf6c104b232433a71d0de2c3d"
+    },
+    {
+      "original": "RESULTS_SUMMARY_TH.md",
+      "archive": "reports/archive/RESULTS_SUMMARY_TH.md.pre-nano-benchmark-20261005T083307Z",
+      "sha256": "48e8e0599c76af7e12fca8e6490dfbc11f06c4cae0dd253af19148e39e7ebe46"
+    },
+    {
+      "original": "PRESENTATION_SUMMARY_TH.md",
+      "archive": "reports/archive/PRESENTATION_SUMMARY_TH.md.pre-nano-benchmark-20261005T083307Z",
+      "sha256": "7329503f19670352a6e301ab5424d39a931359fb091e198dc4c536d87f1a0397"
+    },
+    {
+      "original": "EXPERIMENT_PROTOCOL.md",
+      "archive": "reports/archive/EXPERIMENT_PROTOCOL.md.pre-nano-benchmark-20261005T083307Z",
+      "sha256": "372738772d24a114d7118fe6c5ea481631b7263777c5bc4059311dd28d0847bf"
+    },
+    {
+      "original": "configs/benchmark.yaml",
+      "archive": "reports/archive/configs__benchmark.yaml.pre-nano-benchmark-20261005T083307Z",
+      "sha256": "d80d3fb98094f8e52a04334635d83e7d7b0d3cf4e4ad93678a46aa747cf58e2a"
+    },
+    {
+      "original": "manifests/environment.json",
+      "archive": "reports/archive/manifests__environment.json.pre-nano-benchmark-20261005T083307Z",
+      "sha256": "4be655dd98646382422a1e654b566ee841568ed25e51f849c9869968f4b218c0"
+    },
+    {
+      "original": "manifests/STANDARDIZATION.json",
+      "archive": "reports/archive/manifests__STANDARDIZATION.json.pre-nano-benchmark-20261005T083307Z",
+      "sha256": "0ab880a103908b19b7332dee913e939c8555f13c9ff358d2bd324b7002248346"
+    }
+  ],
+  "user_authorization": "Continue Nano with the same frozen benchmark workflow; acquire only missing official checkpoints; stop after Nano, no automatic master synthesis",
+  "report_layout": "Current canonical quantitative/visual templates",
+  "resume_policy": "Never rerun complete model artifacts; stop on partial or corrupt artifacts pending audited continuation"
+}

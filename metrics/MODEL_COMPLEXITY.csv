@@ -1,1 +1,4 @@
 study_id,schema_version,experiment,tier,family,model,loaded_parameters,fused_parameters,gflops,checkpoint_mb,model_load_seconds
+yolo_instance_segmentation_mots20_scaling,1.0,YOLO_Nano_Seg_MOTS20_Benchmark,nano,YOLO26,YOLO26n-Seg,3126280,2722980,10.6303744,6.719965,0.2721462822519243
+yolo_instance_segmentation_mots20_scaling,1.0,YOLO_Nano_Seg_MOTS20_Benchmark,nano,YOLO11,YOLO11n-Seg,2876848,2868664,9.9593344,6.182636,0.24954515998251736
+yolo_instance_segmentation_mots20_scaling,1.0,YOLO_Nano_Seg_MOTS20_Benchmark,nano,YOLOv8,YOLOv8n-Seg,3409968,3404320,12.1411072,7.071756,0.16863463368887702
