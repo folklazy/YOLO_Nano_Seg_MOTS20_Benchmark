@@ -1,6 +1,6 @@
-# Canonical Nano plots
+# รายการกราฟ Nano (N)
 
-Source: [TIER_RESULTS.csv](../../metrics/TIER_RESULTS.csv).
+ค่าต้นทาง: [TIER_RESULTS.csv](../../metrics/TIER_RESULTS.csv) เรียงโมเดลตามตระกูลและใช้ค่าที่บันทึกไว้ ไม่รัน inference หรือเปลี่ยนค่าที่วัด
 
 - [01_mask_map50_95.png](01_mask_map50_95.png)
 - [02_ap50_ap75.png](02_ap50_ap75.png)

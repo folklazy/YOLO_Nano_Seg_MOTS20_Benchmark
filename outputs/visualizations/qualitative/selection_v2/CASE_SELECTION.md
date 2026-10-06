@@ -1,26 +1,26 @@
-# Nano — qualitative case selection v2
+# เหตุผลเลือกกรณี Nano (N) — ชุดที่ 2
 
-คัดจาก 12 frozen visualization frames โดยตรวจ per-frame metrics, original/GT และ saved RLE ที่ confidence ≥0.25 / mask matching IoU ≥0.50 ตาม evaluator/ignore policy เดิม ไม่รัน inference
+คัดจาก 12 เฟรมใน manifest ภาพประกอบที่ตรึง โดยตรวจรายเฟรมตัวชี้วัด, ต้นฉบับ/GT และ saved RLE ที่ confidence ≥0.25 / เกณฑ์จับคู่ mask IoU ≥0.50 ตาม evaluator/ignore policy เดิม ไม่รัน inference
 
-1 shared anchor + 3 cases ตามพฤติกรรมของ tier ไม่บังคับภาพทั้งหมดตรงกันระหว่าง tier; ภายใน case ใช้เฟรมเต็มเดียวกันทุกโมเดล ROI เป็นภาพเสริม ไม่ซ่อน full-frame errors
+1 กรณีร่วม + 3 กรณีตามพฤติกรรมของขนาดไม่บังคับภาพทั้งหมดตรงกันระหว่างขนาด; ภายในกรณีใช้เฟรมเต็มเดียวกันทุกโมเดล ROI เป็นภาพเสริม ไม่ซ่อนข้อผิดพลาดเต็มเฟรม
 
-| Case | Sequence / frame | Why selected / decision use | Source comparison |
-|---|---|---|---|
-| 1 | MOTS20-11 / 000001 | tier diagnostic: equal TP for two models, unequal FP and different GT; ใช้เทียบการเก็บ GT 2028 กับภาระ extra masks: YOLO26n/YOLO11n มี TP 8 และ FN ชุดเดียวกัน แต่ YOLO11n มี FP บน GT 2006 ที่มีคู่แล้ว; YOLOv8n มี TP 7 | new composite from saved predictions |
-| 2 | MOTS20-09 / 000263 | shared anchor: common failure; ใช้แสดงข้อจำกัดร่วมและภาระตรวจ unmatched output เมื่อคนซ้อนกัน ไม่ใช่ case ที่ counts ให้ผู้ชนะชัด | reuse existing image |
-| 3 | MOTS20-02 / 000300 | trade-off: added valid GT and more unmatched outputs; ช่วยเลือกตาม priority: YOLOv8n เก็บ GT เพิ่ม แต่ FP มากขึ้น; สอดคล้องในทิศทางกับ Recall สูง/Precision ต่ำใน dataset | reuse existing image |
-| 4 | MOTS20-09 / 000001 | similar coverage but extra masks on already matched GT; เป็น pain point ด้าน extra-instance output: ทุกโมเดลมี TP 6 / FN 0 แต่ YOLO26n มี mask เพิ่มทับ GT 2001 และ YOLOv8n มีสอง mask เพิ่มทับ GT 2019; YOLO11n ไม่มี FP | reuse existing image |
+| กรณี | ลำดับภาพ / เฟรม | เหตุผลที่เลือกและการใช้งาน | แหล่งภาพเปรียบเทียบ |
+| --- | --- | --- | --- |
+| 1 | MOTS20-11 / 000001 | กรณีแยกพฤติกรรมของขนาดนี้: สองโมเดลมี TP เท่ากัน แต่ FP และชุด GT ต่างกัน; ใช้เทียบการเก็บ GT 2028 กับภาระ mask ส่วนเกิน: YOLO26n/YOLO11n มี TP 8 และ FN ชุดเดียวกัน แต่ YOLO11n มี FP บน GT 2006 ที่มีคู่แล้ว; YOLOv8n มี TP 7 | สร้างภาพจาก prediction ที่บันทึกไว้ |
+| 2 | MOTS20-09 / 000263 | กรณีร่วม: ข้อผิดพลาดร่วม; ใช้แสดงข้อจำกัดร่วมและภาระตรวจ prediction ที่ไม่มีคู่ เมื่อคนซ้อนกัน ไม่ใช่ กรณีที่ จำนวน ให้ผู้ชนะชัด | ใช้ภาพเดิม |
+| 3 | MOTS20-02 / 000300 | ข้อแลกเปลี่ยน: เก็บ valid GT เพิ่มพร้อม prediction ที่ไม่มีคู่เพิ่ม; ช่วยเลือกตาม สิ่งที่ให้ความสำคัญ: YOLOv8n เก็บ GT เพิ่ม แต่ FP มากขึ้น; สอดคล้องในทิศทางกับ Recall สูง/Precision ต่ำใน ชุดข้อมูล | ใช้ภาพเดิม |
+| 4 | MOTS20-09 / 000001 | similar ความครบถ้วน but mask ส่วนเกิน ทับ GT ที่มีคู่แล้ว; เป็น ประเด็นปัญหา ด้าน ผลลัพธ์ instance ส่วนเกิน: ทุกโมเดลมี TP 6 / FN 0 แต่ YOLO26n มี mask เพิ่มทับ GT 2001 และ YOLOv8n มีสอง mask เพิ่มทับ GT 2019; YOLO11n ไม่มี FP | ใช้ภาพเดิม |
 
-## ทำไมบางภาพยังตรงกับ tier อื่น
+## ทำไมบางภาพยังตรงกับ ขนาดอื่น
 
-Case 2 (09/263) ใช้ร่วมเพื่อเทียบ FN/FP บน GT ชุดเดียวกัน กรณีอื่นซ้ำได้เมื่อ error เดียวกันช่วยตรวจคนละโมเดล: 05/419 ใช้ L/M ตรวจ GT 2002; 02/1 ใช้ L/M ตรวจ equal counts และ GT ต่างชุด; 02/600 ใช้ Largest/Small ตรวจกรณีสวนอันดับ; 02/300 ใช้ Small/Nano ตรวจ TP–FP trade-off; 11/1 ใช้ L/N แต่ L ตรวจ GT 2016 ส่วน N ตรวจ GT 2028 และ extra mask; 11/450 ใช้ Largest/Medium ตรวจ coverage เท่ากันกับ extra output ของคนละชุดโมเดล ไม่ใช้จำนวนภาพซ้ำเป็นหลักฐานอิสระเพิ่ม
+กรณี 2 (09/263) ใช้ร่วมเพื่อเทียบ FN/FP บน GT ชุดเดียวกันกรณีอื่นซ้ำได้เมื่อข้อผิดพลาดเดียวกันช่วยตรวจคนละโมเดล: 05/419 ใช้ L/M ตรวจ GT 2002; 02/1 ใช้ L/M ตรวจจำนวนเท่ากันและ GT ต่างชุด; 02/600 ใช้ Largest/Small ตรวจกรณีสวนอันดับ; 02/300 ใช้ Small/Nano ตรวจ TP–FP ข้อแลกเปลี่ยน; 11/1 ใช้ L/N แต่ L ตรวจ GT 2016 ส่วน N ตรวจ GT 2028 และ mask ส่วนเกิน; 11/450 ใช้ Largest/Medium ตรวจความครบถ้วนเท่ากันกับผลลัพธ์ส่วนเกินของคนละชุดโมเดล ไม่ใช้จำนวนภาพซ้ำเป็นหลักฐานอิสระเพิ่ม
 
-## การแทน case เดิม
+## การแทนกรณีเดิม
 
-เดิม Case 1 (02/600) มี GT trade-off จริง แต่ 11/1 เพิ่มบริบทและแยก output ของคู่ TP เท่ากัน; Case 3/4 ยังคง GT–FP trade-off และ extra masks บนคนจริงไว้ ภาพ/หลักฐานเก่ายังคงเดิมเพื่อ audit; presentation เก่าเก็บใน reports/archive
+เดิมกรณี 1 (02/600) มี GT ข้อแลกเปลี่ยนจริง แต่ 11/1 เพิ่มบริบทและแยกผลลัพธ์ของคู่ TP เท่ากัน; กรณี 3/4 ยังคง GT–FP ข้อแลกเปลี่ยนและ mask ส่วนเกิน บนคนจริงไว้ ภาพ/หลักฐานเก่ายังคงเดิมเพื่อตรวจย้อนหลัง; การวิเคราะห์ภาพเก่าเก็บใน reports/archive
 
 ## ขอบเขต
 
-ทั้งห้า tier มี 20 case slots แต่ใช้ original frames ต่างกัน 10 เฟรม (เดิม 6) ชุดใหม่มี MOTS20-11 และยังมี common failure / counterexample ไม่เลือกเฉพาะ frame ที่ accuracy leader ชนะ ทั้งนี้ pool 12 เฟรมไม่แทน dataset; ไม่อ้างว่าเป็นเฟรมที่ต่างที่สุดใน 2,862 เฟรม ไม่ใช้ภาพวัด latency/VRAM หรือ statistical significance
+ทั้งห้าขนาดมี 20 ตำแหน่งกรณีแต่ใช้เฟรมต้นฉบับต่างกัน 10 เฟรม (เดิม 6) ชุดใหม่มี MOTS20-11 และยังมีข้อผิดพลาดร่วม / กรณีสวนอันดับไม่เลือกเฉพาะเฟรมที่โมเดลนำด้านความแม่นยำชนะ ทั้งนี้ pool 12 เฟรมไม่แทนชุดข้อมูล; ไม่อ้างว่าเป็นเฟรมที่ต่างที่สุดใน 2,862 เฟรมไม่ใช้ภาพวัดเวลาแฝง/VRAM หรือนัยสำคัญทางสถิติ
 
-[Candidate pool](CANDIDATE_POOL.json) · [Case evidence](CASE_EVIDENCE.json) · [Focus evidence](FOCUS_EVIDENCE.json) · [Decision audit](CASE_DECISION_AUDIT.json) · [Active selection](../../../../manifests/QUALITATIVE_SELECTION.json)
+[ชุดเฟรมที่คัดจาก](CANDIDATE_POOL.json) · [หลักฐานรายกรณี](CASE_EVIDENCE.json) · [หลักฐานภาพขยาย](FOCUS_EVIDENCE.json) · [หลักฐานใช้เลือกโมเดล](CASE_DECISION_AUDIT.json) · [ชุดหลักฐานปัจจุบัน](../../../../manifests/QUALITATIVE_SELECTION.json)
