@@ -1,16 +1,9 @@
-# โปรแกรมของการทดลอง Nano (N)
+# Nano benchmark and documentation
 
-## หน้าที่
+Completed run: `benchmark-20261005T083307Z`. Three models × 2,862 frames; nine CLEAN timing rounds. STOP after Nano; no automatic master synthesis.
 
-รอบ `benchmark-20261005T083307Z` เสร็จแล้ว โปรแกรมรัน benchmark และตัวสร้างรายงานจากรอบเดิมเป็นหลักฐานย้อนหลัง ใช้ `.venv/bin/python` ของ workspace โดยตรง ไม่ติดตั้ง package หรือรันโมเดลใหม่เพื่อเอกสาร
+From the workspace root, `.venv/bin/python YOLO_Nano_Seg_MOTS20_Benchmark/src/run_nano.py --all` is the deterministic scientific runner. The completed run must not be rerun. It validates shared inputs once, preflights all models and maxDet, runs sequential accuracy and clean timing, builds canonical metrics and validates scientific integrity. It stops with documentation pending. Verbose logs/predictions remain local; frozen input archives and SHA256 record the executed source/protocol/config.
 
-## โปรแกรมและการใช้งาน
+`report_nano.py` generates the completed reports and six plots only after `QUALITATIVE_REVIEW.json` records four inspected saved-prediction cases; no model loading or inference. It refuses to overwrite existing plots. `validate_nano_completion.py` is a read-only validation of canonical measurements, source hashes, selected cases, template headings, links and numeric table cells; it writes a validation manifest.
 
-- `.venv/bin/python YOLO_Nano_Seg_MOTS20_Benchmark/src/run_nano.py --all` — ดูต้นฉบับเพื่อหน้าที่และอาร์กิวเมนต์; โปรแกรมรัน benchmark ต้องมีคำสั่งผู้ใช้ก่อนใช้งาน
-- `report_nano.py` — ดูต้นฉบับเพื่อหน้าที่และอาร์กิวเมนต์; โปรแกรมรัน benchmark ต้องมีคำสั่งผู้ใช้ก่อนใช้งาน
-- `validate_nano_completion.py` — ดูต้นฉบับเพื่อหน้าที่และอาร์กิวเมนต์; โปรแกรมรัน benchmark ต้องมีคำสั่งผู้ใช้ก่อนใช้งาน
-- `src/build_qualitative_comparisons.py --tier Nano` — ดูต้นฉบับเพื่อหน้าที่และอาร์กิวเมนต์; โปรแกรมรัน benchmark ต้องมีคำสั่งผู้ใช้ก่อนใช้งาน
-
-## ข้อควรระวัง
-
-ตรวจ process ที่ทำงานก่อนเริ่ม ห้ามสร้าง worker ซ้ำหรือเขียนทับผลเดิมข้อมูล checkpoint และ environment ใช้ร่วมจาก workspace ไม่คัดลอกเข้าการทดลอง ตัวสร้างรายงานเก่าอาจมีหัวข้อคนละรุ่น ห้ามรันทับเอกสารปัจจุบัน ใช้ template กลางและตรวจด้วย `YOLO_Instance_Segmentation_MOTS20_Scaling_Study/scripts/validate_documentation_redesign.py` เมื่อแก้ภาษา/รูปแบบ ภาพเปรียบเทียบใช้ saved RLE และเฟรมต้นฉบับโดยไม่ inference เพิ่ม รายละเอียดการรัน แหล่งที่มาและ hash อยู่ใน manifests และต้นทางเดิม ไม่เริ่มขนาดอื่นหรือสังเคราะห์ผลรวมอัตโนมัติ
+The shared Master `src/build_qualitative_comparisons.py --tier Nano` renders the selected full-frame comparisons from lossless saved predictions and original/GT, without inference. Existing images are never overwritten. Documentation scripts were added after measurement freeze and do not alter frozen scientific sources.

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-06T07:26:53.360652+00:00",
+  "timestamp": "2026-10-06T06:58:36.519861+00:00",
   "status": "PASS",
   "numeric_table_cells_verified": 105,
   "cases": 4,
@@ -10,10 +10,10 @@
   "measured_values_changed": false,
   "inference_rerun": false,
   "document_sha256": {
-    "README.md": "f99ae7745805f7f9f0965544981852d5528a783847d1903a018f3f51e050cc02",
-    "REPORT.md": "6f7015d4cf23d723114691fe7d6f841c2f692a10d3ff21959bd485a9ee075f7d",
-    "RESULTS_SUMMARY_TH.md": "f8d5ad9047e57b2d8ba6e87eba718ed3cac74cc1300ab55a8207a4c606a99e41",
-    "PRESENTATION_SUMMARY_TH.md": "e4e161f3423c7d34f2337a7ce089505322974020005bad5b2676ee71cd8beba1"
+    "README.md": "05202c7f143934fa41de3fcbeaf3be7f35f3946abb28bc5c0caf1d5b334ab0e8",
+    "REPORT.md": "40b9b2659765ee175afdda0d6dba35a12b302313ea46ac24fba3a0010063fb33",
+    "RESULTS_SUMMARY_TH.md": "9efc93b7868c18ca01d8b1241925dfb63e6ac53a1ad43696192dc5db47f90115",
+    "PRESENTATION_SUMMARY_TH.md": "f02d50bef9ce412527ea7d81dfaf61fbb58f2fd0f281f90c99d72f3a10acad12"
   },
   "canonical_metrics_sha256": {
     "MODEL_COMPLEXITY.csv": "e92c637181f3c315df05d27e00aed1d7dfe4c1f63d6c67465c7f3d46620eb6eb",
@@ -27,6 +27,5 @@
   "case_decision_review": "Active selection v2: one shared anchor plus three tier diagnostics; native GT/FP diagnostics and full-frame/ROI images inspected; see manifests/QUALITATIVE_SELECTION.json",
   "selection_version": 2,
   "report_alignment": "PASS: shared headings, 9 compatibility rows, 7 ordered winner rows, concise sequence observations; report numeric tables verified against canonical CSV",
-  "report_numeric_table_cells_verified": 64,
-  "language_standardization": "th-primary: translated current Markdown; historical records and measured artifacts remain unchanged"
+  "report_numeric_table_cells_verified": 64
 }
