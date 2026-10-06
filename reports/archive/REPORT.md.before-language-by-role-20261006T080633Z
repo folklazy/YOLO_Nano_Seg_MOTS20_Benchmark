@@ -60,15 +60,15 @@ Scientific integrity PASS; all 15 detailed checks are retained in [final integri
 | Highest FPS | YOLO26n-Seg | 12.137 |
 | Lowest VRAM | YOLO11n-Seg | 1030.00 |
 
-Inference and pipeline latency are in ms/frame; FPS is derived from mean pipeline latency; VRAM is peak allocated MiB.
+Inference / pipeline เป็น ms/frame; FPS คำนวณจาก mean pipeline; VRAM เป็น peak allocated MiB.
 
 ## 6. Key Findings
 
-- Observation: YOLO26n-Seg has the highest Mask mAP50-95, 0.472698; the gap to the runner-up is 0.040768 on the 0–1 scale.
-- Observation: YOLO26n-Seg leads AP75, but YOLOv8n-Seg leads Recall; YOLO26n has the lowest Recall, so mask accuracy and instance coverage must be considered separately.
-- Observation: the fastest forward pass is from YOLOv8n-Seg; the fastest pipeline and highest FPS are from YOLO26n-Seg; the lowest VRAM is from YOLO11n-Seg.
-- Closest pair in Mask mAP50-95: YOLO11n-Seg / YOLOv8n-Seg differ by 0.008867; this does not establish equivalence or statistical significance without testing.
-- Interpretation: selection must distinguish accuracy, forward latency, pipeline latency and memory; lower GFLOPs or parameter counts do not guarantee lower latency or VRAM.
+- Observation: YOLO26n-Seg มี Mask mAP50-95 สูงสุด 0.472698; ห่างอันดับถัดไป 0.040768 บนสเกล 0–1
+- Observation: YOLO26n-Seg นำ AP75 แต่ YOLOv8n-Seg นำ Recall; YOLO26n มี Recall ต่ำสุด จึงต้องแยก mask accuracy จากความครบถ้วน
+- Observation: forward เร็วสุดคือ YOLOv8n-Seg, pipeline เร็วสุดและ FPS สูงสุดคือ YOLO26n-Seg, VRAM ต่ำสุดคือ YOLO11n-Seg
+- คู่ที่ใกล้ที่สุดด้าน Mask mAP50-95: YOLO11n-Seg / YOLOv8n-Seg ต่าง 0.008867; ไม่เรียกว่าเท่ากันหรือมี statistical significance โดยไม่มีการทดสอบ
+- Interpretation: การเลือกต้องแยก accuracy, forward, pipeline และ memory; GFLOPs/parameters ต่ำกว่าไม่รับรอง latency หรือ VRAM ต่ำกว่าเสมอ
 
 ## 7. Per-sequence Observations
 
@@ -81,8 +81,8 @@ Recall ordering differs: YOLOv8n leads on MOTS20-02, YOLO11n leads on MOTS20-05,
 
 ## 8. Efficiency and Resource Observations
 
-- Closest pair in mean inference latency: YOLO26n-Seg / YOLO11n-Seg differ by 1.297 ms; statistical significance was not tested.
-- Closest pair in mean pipeline latency: YOLO11n-Seg / YOLOv8n-Seg differ by 1.758 ms; statistical significance was not tested.
+- คู่ที่ใกล้ที่สุดด้าน inference mean: YOLO26n-Seg / YOLO11n-Seg ต่าง 1.297 ms; ไม่ได้ทดสอบ statistical significance
+- คู่ที่ใกล้ที่สุดด้าน pipeline mean: YOLO11n-Seg / YOLOv8n-Seg ต่าง 1.758 ms; ไม่ได้ทดสอบ statistical significance
 
 YOLO11n-Seg has the lowest peak allocated VRAM. Loaded/fused parameters, GFLOPs and separate load times are retained in [MODEL_COMPLEXITY.csv](metrics/MODEL_COMPLEXITY.csv). Peak reserved VRAM is preserved in [source timing summary](timing/benchmark-20261005T083307Z/clean_repetition/summary.csv). Separate RLE preparation means: yolo26n-seg.pt: 336.791 ms; yolo11n-seg.pt: 409.860 ms; yolov8n-seg.pt: 405.991 ms.
 
@@ -94,11 +94,7 @@ CPU NNPACK unsupported-hardware warnings were recorded during Nano setup/complex
 
 ## 10. Limitations
 
-This evaluates frame-level Person instance segmentation on MOTS20, rather than MOTS tracking. The 26,894 GT instances are frame-level annotations, not unique people. TP-only IoU/Dice are conditional on successful matching.
-
-Consecutive video frames are correlated, and no statistical significance test was performed; small differences are descriptive. Selected qualitative cases do not replace dataset-level metrics.
-
-These measurements do not establish robustness to blur, low light, camera angle or occlusion severity, or deployment suitability. They support candidate selection for later CCTV robustness evaluation only. No weighted score or architectural causal conclusion is used.
+ผลนี้เป็น Person instance segmentation รายเฟรมบน MOTS20 ไม่ใช่ MOTS tracking; 26,894 GT instances เป็น annotation รายเฟรม ไม่ใช่จำนวนคนไม่ซ้ำ TP-only IoU/Dice พิจารณาเฉพาะคู่ที่ match ได้ ภาพวิดีโอต่อเนื่องสัมพันธ์กันและไม่มีการทดสอบ statistical significance ตัวอย่างเชิงคุณภาพไม่แทน dataset-level metrics ผลยังไม่ยืนยัน blur, low-light, มุมกล้อง, ระดับ occlusion หรือ deployment suitability จึงใช้เพื่อเลือก candidate for later CCTV robustness evaluation เท่านั้น ไม่มี weighted score หรือข้อสรุปเชิงสาเหตุจาก architecture
 
 ## 11. Reproducibility and Source Artifacts
 
@@ -118,4 +114,4 @@ Lossless per-frame RLE predictions and full telemetry remain local under predict
 
 ## Qualitative Analysis
 
-Four same-frame diagnostic comparisons from saved lossless predictions are discussed in [PRESENTATION_SUMMARY_TH.md](PRESENTATION_SUMMARY_TH.md). See [current case selection](outputs/visualizations/qualitative/selection_v2/CASE_SELECTION.md) and [active selection](manifests/QUALITATIVE_SELECTION.json) for selection reasons, shared and tier-specific behaviors, and evidence limits. Comparisons use original MOTS20 frames. No inference or measured values were changed for this documentation update.
+Four same-frame diagnostic comparisons from saved lossless predictions are discussed in [PRESENTATION_SUMMARY_TH.md](PRESENTATION_SUMMARY_TH.md). See [current case selection](outputs/visualizations/qualitative/selection_v2/CASE_SELECTION.md) and [active selection](manifests/QUALITATIVE_SELECTION.json) for the shared anchor, Nano-specific behaviors and evidence limits. No inference or measured values were changed for this documentation update.

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-06T08:06:34.732344+00:00",
+  "timestamp": "2026-10-06T06:58:36.519861+00:00",
   "status": "PASS",
   "numeric_table_cells_verified": 105,
   "cases": 4,
@@ -11,7 +11,7 @@
   "inference_rerun": false,
   "document_sha256": {
     "README.md": "05202c7f143934fa41de3fcbeaf3be7f35f3946abb28bc5c0caf1d5b334ab0e8",
-    "REPORT.md": "2e668b5ce66183f22d49ec28f5aa9cd6d6d4e313f3463a21fbe17b8a38517b59",
+    "REPORT.md": "40b9b2659765ee175afdda0d6dba35a12b302313ea46ac24fba3a0010063fb33",
     "RESULTS_SUMMARY_TH.md": "9efc93b7868c18ca01d8b1241925dfb63e6ac53a1ad43696192dc5db47f90115",
     "PRESENTATION_SUMMARY_TH.md": "f02d50bef9ce412527ea7d81dfaf61fbb58f2fd0f281f90c99d72f3a10acad12"
   },
@@ -27,7 +27,5 @@
   "case_decision_review": "Active selection v2: one shared anchor plus three tier diagnostics; native GT/FP diagnostics and full-frame/ROI images inspected; see manifests/QUALITATIVE_SELECTION.json",
   "selection_version": 2,
   "report_alignment": "PASS: shared headings, 9 compatibility rows, 7 ordered winner rows, concise sequence observations; report numeric tables verified against canonical CSV",
-  "report_numeric_table_cells_verified": 61,
-  "documentation_language": "PASS: English technical records; Thai prose in _TH summaries; canonical terms retained.",
-  "language_audit": "../YOLO_Instance_Segmentation_MOTS20_Scaling_Study/provenance/DOCUMENT_LANGUAGE_BY_ROLE_20261006T080633Z.json"
+  "report_numeric_table_cells_verified": 64
 }
