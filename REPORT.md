@@ -2,7 +2,11 @@
 
 ## 1. Experiment Status
 
-COMPLETE / PASS WITH WARNINGS. Scientific integrity PASS; run `benchmark-20261005T083307Z`.
+PASS WITH WARNINGS
+
+- Models completed: 3/3
+- Frames: 2,862 per model; Person GT instances: 26,894
+- Run ID: `benchmark-20261005T083307Z`
 
 ## 2. Models Tested
 
@@ -15,26 +19,25 @@ COMPLETE / PASS WITH WARNINGS. Scientific integrity PASS; run `benchmark-2026100
 
 ## 3. Protocol Compatibility
 
-Dataset/environment/framework compatible with the frozen Largest baseline. See [EXPERIMENT_PROTOCOL.md](EXPERIMENT_PROTOCOL.md) and [Master methodology](https://github.com/folklazy/YOLO_Instance_Segmentation_MOTS20_Scaling_Study/blob/main/METHODOLOGY_REFERENCE.md).
-
 | Item | Status |
 |---|---|
-| Exactly 3 expected models | PASS |
-| 2862 frames and 26894 GT per model | PASS |
-| Dataset hashes, dimensions and ordering | PASS |
-| Frozen evaluator and preprocessing | PASS |
-| Config and protocol freeze | PASS |
-| Framework and environment | PASS |
-| AP maxDet 200 preflight | PASS |
-| Finite native Person predictions | PASS |
-| No model cap saturation | PASS |
-| Accuracy arithmetic and sequence completeness | PASS |
-| Three clean timing rounds per model | PASS |
-| Exact timing frame order | PASS |
-| Timing pooled statistics and VRAM | PASS |
-| Checkpoint hashes | PASS |
-| Frozen input archive | PASS |
+| Dataset | PASS |
+| Evaluator | PASS |
+| Preprocessing | PASS |
+| Input size | PASS |
+| Precision | PASS |
+| Thresholds | PASS |
+| maxDet | PASS |
+| Timing protocol | PASS |
+| Environment | PASS |
 
+Dataset compatibility: PASS
+
+Preprocessing compatibility: PASS
+
+[Common methodology](https://github.com/folklazy/YOLO_Instance_Segmentation_MOTS20_Scaling_Study/blob/main/METHODOLOGY_REFERENCE.md) · [Frozen protocol](EXPERIMENT_PROTOCOL.md)
+
+Scientific integrity PASS; all 15 detailed checks are retained in [final integrity](manifests/final_integrity.json), including model/frame coverage, checkpoint hashes, native predictions, cap saturation and clean timing.
 
 ## 4. Overall Results
 
@@ -49,63 +52,66 @@ Dataset/environment/framework compatible with the frozen Largest baseline. See [
 
 | Category | Model | Value |
 |---|---|---|
-| Mask mAP50-95 | YOLO26n-Seg | 0.472698 |
-| AP75 | YOLO26n-Seg | 0.506766 |
-| Recall | YOLOv8n-Seg | 0.696921 |
-| Inference speed | YOLOv8n-Seg | 9.045 ms |
-| Pipeline speed | YOLO26n-Seg | 82.390 ms |
-| VRAM | YOLO11n-Seg | 1030.00 MiB |
+| Highest Mask mAP50-95 | YOLO26n-Seg | 0.472698 |
+| Highest AP75 | YOLO26n-Seg | 0.506766 |
+| Highest Recall | YOLOv8n-Seg | 0.696921 |
+| Fastest inference | YOLOv8n-Seg | 9.045 |
+| Fastest pipeline | YOLO26n-Seg | 82.390 |
 | Highest FPS | YOLO26n-Seg | 12.137 |
+| Lowest VRAM | YOLO11n-Seg | 1030.00 |
 
+Inference / pipeline เป็น ms/frame; FPS คำนวณจาก mean pipeline; VRAM เป็น peak allocated MiB.
 
 ## 6. Key Findings
 
-- YOLO26n นำ mAP เหนือ YOLO11n/YOLOv8n ประมาณ 0.040768/0.049636 แต่ Recall ต่ำสุด เป็น accuracy–coverage trade-off
-- YOLO11n/YOLOv8n เป็นคู่ mAP ใกล้ที่สุด ต่างประมาณ 0.008867; AP75/Precision นำใน YOLO11n แต่ Recall/forward นำใน YOLOv8n ไม่มี significance test
-- YOLOv8n forward เร็วสุด 9.045 ms แต่ YOLO26n pipeline เร็วสุด 82.390 ms / 12.137 FPS เพราะผลรวม stage ที่วัดต่างจาก forward อย่างเดียว
-- YOLO11n VRAM ต่ำสุด 1030.00 MiB และ GFLOPs ต่ำสุด แต่ pipeline ช้าที่สุด; complexity ไม่กำหนดอันดับ latency โดยตรง
+- Observation: YOLO26n-Seg มี Mask mAP50-95 สูงสุด 0.472698; ห่างอันดับถัดไป 0.040768 บนสเกล 0–1
+- Observation: YOLO26n-Seg นำ AP75 แต่ YOLOv8n-Seg นำ Recall; YOLO26n มี Recall ต่ำสุด จึงต้องแยก mask accuracy จากความครบถ้วน
+- Observation: forward เร็วสุดคือ YOLOv8n-Seg, pipeline เร็วสุดและ FPS สูงสุดคือ YOLO26n-Seg, VRAM ต่ำสุดคือ YOLO11n-Seg
+- คู่ที่ใกล้ที่สุดด้าน Mask mAP50-95: YOLO11n-Seg / YOLOv8n-Seg ต่าง 0.008867; ไม่เรียกว่าเท่ากันหรือมี statistical significance โดยไม่มีการทดสอบ
+- Interpretation: การเลือกต้องแยก accuracy, forward, pipeline และ memory; GFLOPs/parameters ต่ำกว่าไม่รับรอง latency หรือ VRAM ต่ำกว่าเสมอ
 
 ## 7. Per-sequence Observations
 
-- YOLO26n-Seg / MOTS20-02: mAP 0.335752, Recall 0.550220
-- YOLO26n-Seg / MOTS20-05: mAP 0.523544, Recall 0.713242
-- YOLO26n-Seg / MOTS20-09: mAP 0.468691, Recall 0.759740
-- YOLO26n-Seg / MOTS20-11: mAP 0.541629, Recall 0.739279
-- YOLO11n-Seg / MOTS20-02: mAP 0.290888, Recall 0.564143
-- YOLO11n-Seg / MOTS20-05: mAP 0.489640, Recall 0.733486
-- YOLO11n-Seg / MOTS20-09: mAP 0.426000, Recall 0.755551
-- YOLO11n-Seg / MOTS20-11: mAP 0.501796, Recall 0.735754
-- YOLOv8n-Seg / MOTS20-02: mAP 0.271786, Recall 0.582611
-- YOLOv8n-Seg / MOTS20-05: mAP 0.485786, Recall 0.729985
-- YOLOv8n-Seg / MOTS20-09: mAP 0.416278, Recall 0.745915
-- YOLOv8n-Seg / MOTS20-11: mAP 0.495783, Recall 0.738456
+- YOLO26n-Seg: strongest MOTS20-11 (0.541629); weakest MOTS20-02 (0.335752) by Mask mAP50-95.
+- YOLO11n-Seg: strongest MOTS20-11 (0.501796); weakest MOTS20-02 (0.290888) by Mask mAP50-95.
+- YOLOv8n-Seg: strongest MOTS20-11 (0.495783); weakest MOTS20-02 (0.271786) by Mask mAP50-95.
+- Ranking changes relative to pooled AP: none across the four sequences.
 
-All four sequences rank YOLO26n > YOLO11n > YOLOv8n by mAP. All models have their lowest sequence mAP on MOTS20-02 and highest on MOTS20-11. Recall ordering differs: YOLO26n leads on 09/11 but trails on 02/05. Pooled AP is not a simple mean of sequence AP.
+Recall ordering differs: YOLOv8n leads on MOTS20-02, YOLO11n leads on MOTS20-05, and YOLO26n leads on MOTS20-09/11. Pooled AP is not a simple mean of sequence AP; complete values remain in [PER_SEQUENCE_RESULTS.csv](metrics/PER_SEQUENCE_RESULTS.csv).
 
 ## 8. Efficiency and Resource Observations
 
-Nine accepted CLEAN rounds: 3 per model, 100 measured frames per round after 10 warmups with CUDA synchronization. Pipeline = preprocess + inference + postprocess. Mean postprocess: YOLO26n 67.627 ms; YOLO11n 83.942 ms; YOLOv8n 84.911 ms. Mean RLE preparation 336.791/409.860/405.991 ms is excluded from pipeline along with disk I/O; do not treat reported FPS as artifact-export throughput. Ultralytics-inclusive diagnostic is not added again to pipeline.
+- คู่ที่ใกล้ที่สุดด้าน inference mean: YOLO26n-Seg / YOLO11n-Seg ต่าง 1.297 ms; ไม่ได้ทดสอบ statistical significance
+- คู่ที่ใกล้ที่สุดด้าน pipeline mean: YOLO11n-Seg / YOLOv8n-Seg ต่าง 1.758 ms; ไม่ได้ทดสอบ statistical significance
 
-[MODEL_COMPLEXITY.csv](metrics/MODEL_COMPLEXITY.csv) retains loaded/fused parameters, GFLOPs and load time. Reserved VRAM remains in accepted timing source.
+YOLO11n-Seg has the lowest peak allocated VRAM. Loaded/fused parameters, GFLOPs and separate load times are retained in [MODEL_COMPLEXITY.csv](metrics/MODEL_COMPLEXITY.csv). Peak reserved VRAM is preserved in [source timing summary](timing/benchmark-20261005T083307Z/clean_repetition/summary.csv). Separate RLE preparation means: yolo26n-seg.pt: 336.791 ms; yolo11n-seg.pt: 409.860 ms; yolov8n-seg.pt: 405.991 ms.
+
+Nine accepted CLEAN rounds: 3 per model, 100 measured frames per round after 10 warmups with CUDA synchronization. Pipeline = preprocess + inference + postprocess. Mean postprocess: YOLO26n-Seg: 67.627 ms; YOLO11n-Seg: 83.942 ms; YOLOv8n-Seg: 84.911 ms. RLE preparation and disk I/O are excluded; Ultralytics-inclusive postprocess is a diagnostic subset and must not be added again to pipeline.
 
 ## 9. Warnings and Anomalies
 
-CPU NNPACK unsupported-hardware warnings were recorded during setup/complexity inspection. Scientific integrity PASS and nine CLEAN GPU timing rounds; no warning is used to modify a measured value. maxDet100 fails at least one AP convergence field for each model; maxDet200/300/1000 converge for all three. No package upgrade, training, fine-tuning or inference rerun for documentation.
+CPU NNPACK unsupported-hardware warnings were recorded during Nano setup/complexity inspection. Scientific integrity PASS and primary timing contains nine CLEAN GPU rounds; no package versions or measured values were changed to suppress warnings. maxDet100 fails at least one AP convergence field for each model; maxDet200/300/1000 converge for all three, so the frozen AP maxDet200 remains valid. Pipeline excludes RLE preparation and disk I/O; reported FPS is not end-to-end mask-saving/CCTV throughput. No training, fine-tuning or inference rerun for documentation.
 
 ## 10. Limitations
 
-Frame-level segmentation, not MOTS tracking. TP-only quality is conditional on matching; selected qualitative cases are diagnostic. No statistical-significance test, causal architecture claim, weighted score or final CCTV superiority.
+ผลนี้เป็น Person instance segmentation รายเฟรมบน MOTS20 ไม่ใช่ MOTS tracking; 26,894 GT instances เป็น annotation รายเฟรม ไม่ใช่จำนวนคนไม่ซ้ำ TP-only IoU/Dice พิจารณาเฉพาะคู่ที่ match ได้ ภาพวิดีโอต่อเนื่องสัมพันธ์กันและไม่มีการทดสอบ statistical significance ตัวอย่างเชิงคุณภาพไม่แทน dataset-level metrics ผลยังไม่ยืนยัน blur, low-light, มุมกล้อง, ระดับ occlusion หรือ deployment suitability จึงใช้เพื่อเลือก candidate for later CCTV robustness evaluation เท่านั้น ไม่มี weighted score หรือข้อสรุปเชิงสาเหตุจาก architecture
 
 ## 11. Reproducibility and Source Artifacts
 
-Canonical [TIER_RESULTS](metrics/TIER_RESULTS.csv), [PER_SEQUENCE_RESULTS](metrics/PER_SEQUENCE_RESULTS.csv), [TIMING_SUMMARY](metrics/TIMING_SUMMARY.csv), [MODEL_COMPLEXITY](metrics/MODEL_COMPLEXITY.csv), [PREFLIGHT_MAXDET](metrics/PREFLIGHT_MAXDET.csv).
+- [TIER_RESULTS.csv](metrics/TIER_RESULTS.csv)
+- [PER_SEQUENCE_RESULTS.csv](metrics/PER_SEQUENCE_RESULTS.csv)
+- [TIMING_SUMMARY.csv](metrics/TIMING_SUMMARY.csv)
+- [MODEL_COMPLEXITY.csv](metrics/MODEL_COMPLEXITY.csv)
+- [PREFLIGHT_MAXDET.csv](metrics/PREFLIGHT_MAXDET.csv)
 
-[STANDARDIZATION](manifests/STANDARDIZATION.json), [final integrity](manifests/final_integrity.json), [public environment](manifests/environment_public.json). Saved lossless predictions and detailed telemetry remain local/ignored. See [canonical plots](outputs/plots/INDEX.md).
+[Standardization provenance](manifests/STANDARDIZATION.json) · [Final integrity](manifests/final_integrity.json) · [Public environment](manifests/environment_public.json) · [Timing source](timing/benchmark-20261005T083307Z/clean_repetition/summary.csv) · [Plots](outputs/plots/INDEX.md)
+
+Lossless per-frame RLE predictions and full telemetry remain local under predictions/benchmark-20261005T083307Z/ and timing/benchmark-20261005T083307Z/. Published manifests record hashes; this editorial update does not recalculate metrics or rerun inference.
 
 ## 12. Relation to Full Scaling Study
 
-Nano only; no automatic final 17-model synthesis. [Master Study](https://github.com/folklazy/YOLO_Instance_Segmentation_MOTS20_Scaling_Study). STOP after Nano.
+[Master Study](https://github.com/folklazy/YOLO_Instance_Segmentation_MOTS20_Scaling_Study) — this is the Nano tier only. All five tiers are complete, but the final 17-model synthesis remains pending and requires explicit authorization. This report update starts no benchmark or synthesis.
 
 ## Qualitative Analysis
 
-Four inspected comparisons from saved predictions are discussed in [PRESENTATION_SUMMARY_TH.md](PRESENTATION_SUMMARY_TH.md). [CASE_SELECTION](outputs/visualizations/qualitative/CASE_SELECTION.md) documents balanced selection and limitations. No inference was run for documentation.
+Four same-frame diagnostic comparisons from saved lossless predictions are discussed in [PRESENTATION_SUMMARY_TH.md](PRESENTATION_SUMMARY_TH.md). See [current case selection](outputs/visualizations/qualitative/selection_v2/CASE_SELECTION.md) and [active selection](manifests/QUALITATIVE_SELECTION.json) for the shared anchor, Nano-specific behaviors and evidence limits. No inference or measured values were changed for this documentation update.

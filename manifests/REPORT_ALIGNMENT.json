@@ -1,0 +1,210 @@
+{
+  "timestamp": "2026-10-06T06:58:36.519861+00:00",
+  "status": "PASS",
+  "reason": "User requested Nano REPORT to follow the same format as other tiers",
+  "report_before_sha256": "aee4afc6086556917344a9244a26156dcc872f4257f8986f7161b47730fd8820",
+  "report_after_sha256": "40b9b2659765ee175afdda0d6dba35a12b302313ea46ac24fba3a0010063fb33",
+  "report_template_sha256": "accf2d11ecf99c6fc589f9fd872bb8488f79030d3abac7a24e6d531362c38e19",
+  "reference_report_sha256": {
+    "YOLO_Large_Seg_MOTS20_Benchmark/REPORT.md": "e2d99188f90d016645cb6339617c8154be45a4c6e839fa4a32aea6c2a70e2eed",
+    "YOLO_Second_Largest_Seg_MOTS20_Benchmark/REPORT.md": "30c729c9b7aca78782e1706db1490654a46d63585f0f1e7194a4f18763556f0c",
+    "YOLO_Medium_Seg_MOTS20_Benchmark/REPORT.md": "189e5316ad2e6ca11ac1025b82fa2067d767153a263d89e99f455e39e311e473",
+    "YOLO_Small_Seg_MOTS20_Benchmark/REPORT.md": "54c723520d0b60bc585ad185c548b151b8a439ab86a6cb4e2f41c66f18597d84"
+  },
+  "archives": [
+    {
+      "original": "REPORT.md",
+      "archive": "reports/archive/REPORT.md.pre-nano-report-alignment-20261006T065836Z",
+      "sha256": "aee4afc6086556917344a9244a26156dcc872f4257f8986f7161b47730fd8820"
+    },
+    {
+      "original": "manifests/DOCUMENT_VALIDATION.json",
+      "archive": "reports/archive/manifests__DOCUMENT_VALIDATION.json.pre-nano-report-alignment-20261006T065836Z",
+      "sha256": "91231470fcb59468c166a3a6155dcba8c6028a663872cf75ca849b0114be279a"
+    }
+  ],
+  "master_validator_archives": [
+    {
+      "original": "scripts/validate_documentation_redesign.py",
+      "archive": "reports/archive/scripts__validate_documentation_redesign.py.pre-nano-report-alignment-20261006T065836Z",
+      "sha256": "0564dac24abe372956745fa5ff8e1784bc80360a2a211765161c4791a81f7253"
+    }
+  ],
+  "unchanged_source_artifact_sha256": {
+    "metrics/MODEL_COMPLEXITY.csv": "e92c637181f3c315df05d27e00aed1d7dfe4c1f63d6c67465c7f3d46620eb6eb",
+    "metrics/PREFLIGHT_MAXDET.csv": "5621d9406595d238fb3a4e8a583fbd1c66eeac058453728045e108012d6e83b8",
+    "metrics/PER_SEQUENCE_RESULTS.csv": "c911ae136ecd5b91b06c170fce7348444ec6b8ffa2b61cd675c12b408082249d",
+    "metrics/TIMING_SUMMARY.csv": "73526e2a145033ce6d008c32f5855414da6a2c7549cdd6ed7a826fcde0de94ec",
+    "metrics/gt_frames.csv": "953d433368f104e5abd2e2e56fa903ebee7213eb5a35ad08ad0436d303e06c08",
+    "metrics/gt_instances.csv": "7e172467bba7a38831932f840c6c5b25f862bbf70c60144645b9863cc77414f5",
+    "metrics/TIER_RESULTS.csv": "a1562e54263b2c8e4e13630d3cf1c6e3f45659e92dc57285cf902b6fe1126787",
+    "metrics/benchmark-20261005T083307Z/per_model.csv": "5c726a236e374d4ee50007036c5837d1caee1e024c731eb1055047a9ceb1b6aa",
+    "metrics/benchmark-20261005T083307Z/per_sequence.csv": "3c45ef866ba9deb96c4ff9bd908d2aeb7e53f8172b9523247da89a7b5281028a",
+    "metrics/benchmark-20261005T083307Z/preflight_maxdet.csv": "60b1b4a45838beb2b81530ebec34698293ee70646ce697110d80914e7aa735b4",
+    "metrics/benchmark-20261005T083307Z/protocol_consistency.csv": "a1dec6975393feb48c5573dd9d420145c8c6472bf6d0bc41518fc9afab0b92d8",
+    "timing/benchmark-20261005T083307Z/clean_repetition/summary.csv": "fb019b3569eaa44d41db82476755ca0b0479c1abc47105b12c78580fdbcf266b",
+    "timing/benchmark-20261005T083307Z/clean_repetition/runs.json": "718570e504a1ba58f7715205753d1d555f4a3092db21204900be1a2ac41fa3a2",
+    "configs/benchmark.yaml": "d80d3fb98094f8e52a04334635d83e7d7b0d3cf4e4ad93678a46aa747cf58e2a",
+    "EXPERIMENT_PROTOCOL.md": "2285e4615b32df4a6f902a0da30fcf09aa590ede07d31677c485538c232d9afb",
+    "manifests/environment.json": "d82a9c8a030fcc3efe02d898ed470f9026c00b14825dcb90437ef991c9703257",
+    "manifests/checkpoint_manifest.json": "f4be45f277c6641e6512c6e55efd2ad2649aedd2c1d6a19b36d751be4cb94efc",
+    "manifests/source_manifest.json": "b8012b1346be4dbd08782159ac51cf8547dc7c6313f1ffacddfd1834747b9d6b",
+    "manifests/dataset_manifest.json": "4c5c49860710914f7a0ed817b060a44dc4fbd52083080da21556634fb4f5f3c2",
+    "manifests/benchmark-20261005T083307Z_full_freeze.json": "a7aa876f9687e185ecc553ac3a39ea220a1bcbcf3a0e74148e46aa27625d395c",
+    "manifests/benchmark-20261005T083307Z_input_archive.json": "5e72f930c01d96b1c2b2d6781f154159a022d5b0450731b2eaf7dd22c1707c1b",
+    "manifests/benchmark-20261005T083307Z_prediction_hashes.json": "c33e96da69b62a955542ddf3a8c8e415651a1551bfd9dc6c12665e75a17e27c9",
+    "predictions/benchmark-20261005T083307Z/accuracy/yolo26n-seg/metadata.json": "c76c1faf5b5c9a0d44c1fd144cff4beaf9916e99ca275c24029d9fb69603ee25",
+    "predictions/benchmark-20261005T083307Z/accuracy/yolo11n-seg/metadata.json": "9d5e12fe8591bc179d413ada3a4cd3712e2645f1dcdbb9d2d3a7d9b0c4d2f719",
+    "predictions/benchmark-20261005T083307Z/accuracy/yolov8n-seg/metadata.json": "003a02f2a87069756b3ceeba8091057691c761f0da12ef61a6ab945619ee1334"
+  },
+  "unchanged_workspace_artifact_sha256": {
+    "YOLO_Large_Seg_MOTS20_Benchmark/RESULTS_SUMMARY_TH.md": "d2eca3c5389eef711b4609f5f9f6cdce405e309f2dae6bdacf0135c48585ef56",
+    "YOLO_Large_Seg_MOTS20_Benchmark/PRESENTATION_SUMMARY_TH.md": "3fe5306df83f361bb328d44aa04c59cb1c0312813407e8513ed08373f0fc5be5",
+    "YOLO_Large_Seg_MOTS20_Benchmark/BENCHMARK_INSIGHTS_TH.md": "abf4a21dd887b0d8ae6d70110cd69eba4782b7d9a1a0800583e44be1fe8642c8",
+    "YOLO_Large_Seg_MOTS20_Benchmark/REPORT.md": "e2d99188f90d016645cb6339617c8154be45a4c6e839fa4a32aea6c2a70e2eed",
+    "YOLO_Large_Seg_MOTS20_Benchmark/EXPERIMENT_PROTOCOL.md": "465a6e60b371b29f250eeb8bb5ac4c218be20f114e9e42f7979e5d45aca19366",
+    "YOLO_Large_Seg_MOTS20_Benchmark/README.md": "02bf41ff529c8321cc593923d842ae9e5236afc9631cfa3ff024accf76fd68fb",
+    "YOLO_Second_Largest_Seg_MOTS20_Benchmark/RESULTS_SUMMARY_TH.md": "ce6b531d2f6d850a25b7b1aa09b942131fe80466610259ba763234289a178c63",
+    "YOLO_Second_Largest_Seg_MOTS20_Benchmark/PRESENTATION_SUMMARY_TH.md": "38b7d509e8869d849549a9ee32c4f2ab4f65a12e37cf38d669f91b1dba6dedb4",
+    "YOLO_Second_Largest_Seg_MOTS20_Benchmark/BENCHMARK_INSIGHTS_TH.md": "40cbe9fc375f6f24700b5c48d4327c56fbd5a73323f9ce4fdbb90a8fa52fd655",
+    "YOLO_Second_Largest_Seg_MOTS20_Benchmark/REPORT.md": "30c729c9b7aca78782e1706db1490654a46d63585f0f1e7194a4f18763556f0c",
+    "YOLO_Second_Largest_Seg_MOTS20_Benchmark/EXPERIMENT_PROTOCOL.md": "4552a44160fa66ac058756ed55d8b25d750429b52aa529e9441710dfffdd5a45",
+    "YOLO_Second_Largest_Seg_MOTS20_Benchmark/README.md": "474ec8f96af46d7fc101273154f2617610ad35b13af7ac3b86a1f753eb73045c",
+    "YOLO_Medium_Seg_MOTS20_Benchmark/RESULTS_SUMMARY_TH.md": "bf2c2956cb6a492b7717c2a166d2c6ced836e6ea5b41ab22bf341a8e06a18834",
+    "YOLO_Medium_Seg_MOTS20_Benchmark/PRESENTATION_SUMMARY_TH.md": "38597f6337a3b972045eaf6e8381ee2f1a4bf6f9e10b424b0cdcf16cda816a1f",
+    "YOLO_Medium_Seg_MOTS20_Benchmark/REPORT.md": "189e5316ad2e6ca11ac1025b82fa2067d767153a263d89e99f455e39e311e473",
+    "YOLO_Medium_Seg_MOTS20_Benchmark/EXPERIMENT_PROTOCOL.md": "3d095a8dac90b21e4e5af978e355c2d3f5c45749dfd212446c3ef647be20c5c7",
+    "YOLO_Medium_Seg_MOTS20_Benchmark/README.md": "f5f8c28467aa0c97a946935b1ebc7240d920de9cbebbb534431861c5a9449c1f",
+    "YOLO_Small_Seg_MOTS20_Benchmark/RESULTS_SUMMARY_TH.md": "38f4d73442c85e9ceaae874fe82ee000598e84bf9bdaa776007d69451bb07acb",
+    "YOLO_Small_Seg_MOTS20_Benchmark/PRESENTATION_SUMMARY_TH.md": "b9e527452f329b1e745f47f917b38a755951ea3a850e4d206b011aa5bd8f6dd0",
+    "YOLO_Small_Seg_MOTS20_Benchmark/REPORT.md": "54c723520d0b60bc585ad185c548b151b8a439ab86a6cb4e2f41c66f18597d84",
+    "YOLO_Small_Seg_MOTS20_Benchmark/EXPERIMENT_PROTOCOL.md": "92c50d02bd4209afc6923197f674cbc1149f5a10b6da521fe16224652a0dc5c0",
+    "YOLO_Small_Seg_MOTS20_Benchmark/README.md": "c336743f8d4a6b9a955176421d8d98d45ca0d91ee4be666771f53e420277bf0b",
+    "YOLO_Instance_Segmentation_MOTS20_Scaling_Study/STUDY_STATE.json": "7e156fd050a038d29fd7cdb1c6a6f5861e32ed0dafc55e60ef1bab1c77c25d2c",
+    "YOLO_Instance_Segmentation_MOTS20_Scaling_Study/DATA_SCHEMA.md": "48b414c78aac8fed1bdda0027c33421745d2fa7724c940fec51fcdc64ffed23b",
+    "YOLO_Instance_Segmentation_MOTS20_Scaling_Study/STUDY_STANDARD.md": "d93f956f1ffa0710ad3478177a7a345a7ca593259d0f34b56b9fa45545d61e0b",
+    "YOLO_Instance_Segmentation_MOTS20_Scaling_Study/templates/TIER_REPORT_TEMPLATE.md": "accf2d11ecf99c6fc589f9fd872bb8488f79030d3abac7a24e6d531362c38e19",
+    "YOLO_Nano_Seg_MOTS20_Benchmark/README.md": "05202c7f143934fa41de3fcbeaf3be7f35f3946abb28bc5c0caf1d5b334ab0e8",
+    "YOLO_Nano_Seg_MOTS20_Benchmark/RESULTS_SUMMARY_TH.md": "9efc93b7868c18ca01d8b1241925dfb63e6ac53a1ad43696192dc5db47f90115",
+    "YOLO_Nano_Seg_MOTS20_Benchmark/PRESENTATION_SUMMARY_TH.md": "f02d50bef9ce412527ea7d81dfaf61fbb58f2fd0f281f90c99d72f3a10acad12",
+    "YOLO_Nano_Seg_MOTS20_Benchmark/configs/report_templates/TIER_REPORT_TEMPLATE.md": "accf2d11ecf99c6fc589f9fd872bb8488f79030d3abac7a24e6d531362c38e19",
+    "YOLO_Nano_Seg_MOTS20_Benchmark/manifests/QUALITATIVE_SELECTION.json": "3ab9bbd497b597c9ce98219d1453b13ef193893d904f3bf1c46d4ecfef1ac14c"
+  },
+  "inference_rerun": false,
+  "measured_values_changed": false,
+  "metrics_recalculated": false,
+  "heading_order": [
+    "## 1. Experiment Status",
+    "## 2. Models Tested",
+    "## 3. Protocol Compatibility",
+    "## 4. Overall Results",
+    "## 5. Tier Winners",
+    "## 6. Key Findings",
+    "## 7. Per-sequence Observations",
+    "## 8. Efficiency and Resource Observations",
+    "## 9. Warnings and Anomalies",
+    "## 10. Limitations",
+    "## 11. Reproducibility and Source Artifacts",
+    "## 12. Relation to Full Scaling Study",
+    "## Qualitative Analysis"
+  ],
+  "protocol_rows": [
+    "Dataset",
+    "Evaluator",
+    "Preprocessing",
+    "Input size",
+    "Precision",
+    "Thresholds",
+    "maxDet",
+    "Timing protocol",
+    "Environment"
+  ],
+  "winner_claims": [
+    {
+      "category": "Highest Mask mAP50-95",
+      "model": "YOLO26n-Seg",
+      "field": "mask_map50_95",
+      "display": "0.472698"
+    },
+    {
+      "category": "Highest AP75",
+      "model": "YOLO26n-Seg",
+      "field": "ap75",
+      "display": "0.506766"
+    },
+    {
+      "category": "Highest Recall",
+      "model": "YOLOv8n-Seg",
+      "field": "recall",
+      "display": "0.696921"
+    },
+    {
+      "category": "Fastest inference",
+      "model": "YOLOv8n-Seg",
+      "field": "inference_ms_mean",
+      "display": "9.045"
+    },
+    {
+      "category": "Fastest pipeline",
+      "model": "YOLO26n-Seg",
+      "field": "pipeline_ms_mean",
+      "display": "82.390"
+    },
+    {
+      "category": "Highest FPS",
+      "model": "YOLO26n-Seg",
+      "field": "fps",
+      "display": "12.137"
+    },
+    {
+      "category": "Lowest VRAM",
+      "model": "YOLO11n-Seg",
+      "field": "peak_allocated_vram_mib",
+      "display": "1030.00"
+    }
+  ],
+  "per_sequence_extrema": [
+    {
+      "model": "YOLO26n-Seg",
+      "best_sequence": "MOTS20-11",
+      "best_map": "0.541629",
+      "worst_sequence": "MOTS20-02",
+      "worst_map": "0.335752"
+    },
+    {
+      "model": "YOLO11n-Seg",
+      "best_sequence": "MOTS20-11",
+      "best_map": "0.501796",
+      "worst_sequence": "MOTS20-02",
+      "worst_map": "0.290888"
+    },
+    {
+      "model": "YOLOv8n-Seg",
+      "best_sequence": "MOTS20-11",
+      "best_map": "0.495783",
+      "worst_sequence": "MOTS20-02",
+      "worst_map": "0.271786"
+    }
+  ],
+  "timing_delta_claims": [
+    {
+      "field": "inference_ms_mean",
+      "left": "YOLO26n-Seg",
+      "right": "YOLO11n-Seg",
+      "display": "1.297"
+    },
+    {
+      "field": "pipeline_ms_mean",
+      "left": "YOLO11n-Seg",
+      "right": "YOLOv8n-Seg",
+      "display": "1.758"
+    }
+  ],
+  "numeric_report_table_cells_verified": 64,
+  "active_case_selection": "outputs/visualizations/qualitative/selection_v2/CASE_SELECTION.md",
+  "notes": [
+    "Existing models/overall tables preserved byte for byte; only presentation of the report changes.",
+    "Historical protected REPORT hashes remain valid via the archived report; scientific artifacts must match their original hashes.",
+    "No other tier document, Nano summary, benchmark source or study-state change."
+  ]
+}
