@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-06T04:10:10.827690+00:00",
+  "timestamp": "2026-10-05T10:17:32.226316+00:00",
   "status": "PASS",
   "numeric_table_cells_verified": 105,
   "cases": 4,
@@ -13,7 +13,7 @@
     "README.md": "05202c7f143934fa41de3fcbeaf3be7f35f3946abb28bc5c0caf1d5b334ab0e8",
     "REPORT.md": "aee4afc6086556917344a9244a26156dcc872f4257f8986f7161b47730fd8820",
     "RESULTS_SUMMARY_TH.md": "9efc93b7868c18ca01d8b1241925dfb63e6ac53a1ad43696192dc5db47f90115",
-    "PRESENTATION_SUMMARY_TH.md": "f5b8b551c5bf6733895bd2e1e5801e23c25a11559e1cf5ac416b30c468bc268f"
+    "PRESENTATION_SUMMARY_TH.md": "16dace6a07014f243b6c8c063eda7a7c75c2805f479a971af06ce59e67b506a2"
   },
   "canonical_metrics_sha256": {
     "MODEL_COMPLEXITY.csv": "e92c637181f3c315df05d27e00aed1d7dfe4c1f63d6c67465c7f3d46620eb6eb",
@@ -23,6 +23,5 @@
     "gt_frames.csv": "953d433368f104e5abd2e2e56fa903ebee7213eb5a35ad08ad0436d303e06c08",
     "gt_instances.csv": "7e172467bba7a38831932f840c6c5b25f862bbf70c60144645b9863cc77414f5",
     "TIER_RESULTS.csv": "a1562e54263b2c8e4e13630d3cf1c6e3f45659e92dc57285cf902b6fe1126787"
-  },
-  "case_decision_review": "20 study cases audited; this tier has four inspected full-frame and four supplementary identical-ROI cases; see CASE_DECISION_AUDIT.json"
+  }
 }

@@ -1,0 +1,524 @@
+{
+  "tier": "Nano",
+  "inference_rerun": false,
+  "measured_values_changed": false,
+  "original_evidence_sha256": "5bdecd4c4d5d884d03092a2502ddb2642c2cd7b13cdfa0f02de0b36297a65a17",
+  "generator_sha256": "303e10d0c82f21fe040d617b01145d3a11cd1ff44e3f658d4aa77dbaa93adfb9",
+  "confidence": 0.25,
+  "matching_iou": 0.5,
+  "cases": [
+    {
+      "sequence": "MOTS20-02",
+      "frame": 600,
+      "regions": [
+        {
+          "target_gt_ids": [
+            2029,
+            2043,
+            2048
+          ],
+          "xyxy": [
+            388,
+            406,
+            730,
+            622
+          ]
+        }
+      ],
+      "comparison_sha256": "2088b56441bf99dec34b443d17c76d1c437b75291b5c3335e6535cb1a8dbf923",
+      "image_sha256": "70b9ee9af88602cac0b27019a9e5210f6fe6b4c1ea996d5c13fd860f324a1daa",
+      "gt_sha256": "3442c764c43adc9667b025d030e62d54cff9d337ea7893b1fb6c60de296e76d0",
+      "models": [
+        {
+          "model": "YOLO26n-Seg",
+          "prediction_sha256": "a887c2d43d3293b399d0fb87dc533afbb873445066da9c06c81ba491d8f6895e",
+          "full_frame_counts": {
+            "tp": 9,
+            "fp": 2,
+            "fn": 1,
+            "ignored_predictions": 2
+          },
+          "target_gt": [
+            {
+              "gt_id": 2029,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.0,
+              "best_candidate_prediction_index": null
+            },
+            {
+              "gt_id": 2043,
+              "matched": true,
+              "matched_iou": 0.5944176430048242,
+              "best_candidate_iou_at_conf025": 0.5944176430048242,
+              "best_candidate_prediction_index": 8
+            },
+            {
+              "gt_id": 2048,
+              "matched": true,
+              "matched_iou": 0.6631445477599324,
+              "best_candidate_iou_at_conf025": 0.6631445477599324,
+              "best_candidate_prediction_index": 7
+            }
+          ]
+        },
+        {
+          "model": "YOLO11n-Seg",
+          "prediction_sha256": "232d8c6c0f586cef28d92503335c6392de1513e76a5716dd1d5f3f0d696d3278",
+          "full_frame_counts": {
+            "tp": 8,
+            "fp": 1,
+            "fn": 2,
+            "ignored_predictions": 1
+          },
+          "target_gt": [
+            {
+              "gt_id": 2029,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.49469623915139826,
+              "best_candidate_prediction_index": 7
+            },
+            {
+              "gt_id": 2043,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.0,
+              "best_candidate_prediction_index": null
+            },
+            {
+              "gt_id": 2048,
+              "matched": true,
+              "matched_iou": 0.5749044143204727,
+              "best_candidate_iou_at_conf025": 0.5749044143204727,
+              "best_candidate_prediction_index": 6
+            }
+          ]
+        },
+        {
+          "model": "YOLOv8n-Seg",
+          "prediction_sha256": "36a34ecfdb232159cc6b958b4309e63c6f46f99d0b3ec64cac2f36ea12d63333",
+          "full_frame_counts": {
+            "tp": 8,
+            "fp": 3,
+            "fn": 2,
+            "ignored_predictions": 2
+          },
+          "target_gt": [
+            {
+              "gt_id": 2029,
+              "matched": true,
+              "matched_iou": 0.5199688796680498,
+              "best_candidate_iou_at_conf025": 0.5199688796680498,
+              "best_candidate_prediction_index": 9
+            },
+            {
+              "gt_id": 2043,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.0,
+              "best_candidate_prediction_index": null
+            },
+            {
+              "gt_id": 2048,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.0,
+              "best_candidate_prediction_index": null
+            }
+          ]
+        }
+      ],
+      "focus_path": "case_01_focus.png",
+      "focus_sha256": "67327cae43408794765e1afccd35ce783f597afa6c39cd7a17ced0ba7219fdc6",
+      "focus_size": [
+        720,
+        1928
+      ]
+    },
+    {
+      "sequence": "MOTS20-09",
+      "frame": 263,
+      "regions": [
+        {
+          "target_gt_ids": [
+            2001,
+            2002,
+            2007,
+            2011,
+            2018
+          ],
+          "xyxy": [
+            988,
+            302,
+            1920,
+            805
+          ]
+        }
+      ],
+      "comparison_sha256": "34961c96183de473a90d4405bb19b645980688d1aa21004a9974db9dcb1c80ca",
+      "image_sha256": "ca55a06d24fa0cbfd76b65c8ce9e3f98f842ee992c749a3b0db788ac8f6acf49",
+      "gt_sha256": "73c59a3d52469d81084f99c7e2a0c711a99e9fb4152f6aa839fc26e5e03fa383",
+      "models": [
+        {
+          "model": "YOLO26n-Seg",
+          "prediction_sha256": "1c2163eb6dc5c135bd2d6b9909cc74254c22a043b34128186d7c18941836b62e",
+          "full_frame_counts": {
+            "tp": 7,
+            "fp": 3,
+            "fn": 6,
+            "ignored_predictions": 2
+          },
+          "target_gt": [
+            {
+              "gt_id": 2001,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.27755946225439504,
+              "best_candidate_prediction_index": 11
+            },
+            {
+              "gt_id": 2002,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.014332564071419895,
+              "best_candidate_prediction_index": 6
+            },
+            {
+              "gt_id": 2007,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.05333020637898687,
+              "best_candidate_prediction_index": 11
+            },
+            {
+              "gt_id": 2011,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.32848802573573216,
+              "best_candidate_prediction_index": 11
+            },
+            {
+              "gt_id": 2018,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.45154589757929214,
+              "best_candidate_prediction_index": 7
+            }
+          ]
+        },
+        {
+          "model": "YOLO11n-Seg",
+          "prediction_sha256": "0e1c336b90367b7d0014fd2d53c2a5fc3f1e1937b9c075eb473ac1665e424a68",
+          "full_frame_counts": {
+            "tp": 7,
+            "fp": 4,
+            "fn": 6,
+            "ignored_predictions": 0
+          },
+          "target_gt": [
+            {
+              "gt_id": 2001,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.3071072022819111,
+              "best_candidate_prediction_index": 8
+            },
+            {
+              "gt_id": 2002,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.01084450858941207,
+              "best_candidate_prediction_index": 0
+            },
+            {
+              "gt_id": 2007,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.06336561491200667,
+              "best_candidate_prediction_index": 8
+            },
+            {
+              "gt_id": 2011,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.39686552072800807,
+              "best_candidate_prediction_index": 9
+            },
+            {
+              "gt_id": 2018,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.45688566013897663,
+              "best_candidate_prediction_index": 3
+            }
+          ]
+        },
+        {
+          "model": "YOLOv8n-Seg",
+          "prediction_sha256": "87bd4d43930d78442413ca2e4a639faf73a2eda75bc318b5365cf7d6a6639bcd",
+          "full_frame_counts": {
+            "tp": 7,
+            "fp": 3,
+            "fn": 6,
+            "ignored_predictions": 1
+          },
+          "target_gt": [
+            {
+              "gt_id": 2001,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.2662337662337662,
+              "best_candidate_prediction_index": 10
+            },
+            {
+              "gt_id": 2002,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.011444356748224152,
+              "best_candidate_prediction_index": 1
+            },
+            {
+              "gt_id": 2007,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.09641175948130384,
+              "best_candidate_prediction_index": 9
+            },
+            {
+              "gt_id": 2011,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.3164831402978262,
+              "best_candidate_prediction_index": 10
+            },
+            {
+              "gt_id": 2018,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.45285876561908367,
+              "best_candidate_prediction_index": 3
+            }
+          ]
+        }
+      ],
+      "focus_path": "case_02_focus.png",
+      "focus_sha256": "e2e1af8f0b6d74578778de29fc8d52b63da16808e72d77235da4e1e45f56cf66",
+      "focus_size": [
+        720,
+        1928
+      ]
+    },
+    {
+      "sequence": "MOTS20-02",
+      "frame": 300,
+      "regions": [
+        {
+          "target_gt_ids": [
+            2026
+          ],
+          "xyxy": [
+            240,
+            412,
+            566,
+            628
+          ]
+        },
+        {
+          "target_gt_ids": [
+            2040
+          ],
+          "xyxy": [
+            1029,
+            391,
+            1355,
+            607
+          ]
+        }
+      ],
+      "comparison_sha256": "0114d91c77e22c47e351e0957d943ffcca0d2da84d34adddc2be5879a6602994",
+      "image_sha256": "31ebac8dc47402f05204a2ab3bf5afe1b473e54c1090234f04a77000d2788117",
+      "gt_sha256": "3442c764c43adc9667b025d030e62d54cff9d337ea7893b1fb6c60de296e76d0",
+      "models": [
+        {
+          "model": "YOLO26n-Seg",
+          "prediction_sha256": "510c9507a54ac07d4e51bf024aaa2d242bcc008daa5219641166aa1a76d9acbc",
+          "full_frame_counts": {
+            "tp": 6,
+            "fp": 1,
+            "fn": 6,
+            "ignored_predictions": 1
+          },
+          "target_gt": [
+            {
+              "gt_id": 2026,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.0,
+              "best_candidate_prediction_index": null
+            },
+            {
+              "gt_id": 2040,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.0,
+              "best_candidate_prediction_index": null
+            }
+          ]
+        },
+        {
+          "model": "YOLO11n-Seg",
+          "prediction_sha256": "3572a0d32570cb365a033a78440124b9e5d15b9a1c4f54ab9f8b842495235e8f",
+          "full_frame_counts": {
+            "tp": 7,
+            "fp": 2,
+            "fn": 5,
+            "ignored_predictions": 2
+          },
+          "target_gt": [
+            {
+              "gt_id": 2026,
+              "matched": false,
+              "matched_iou": null,
+              "best_candidate_iou_at_conf025": 0.0,
+              "best_candidate_prediction_index": null
+            },
+            {
+              "gt_id": 2040,
+              "matched": true,
+              "matched_iou": 0.5541368743615934,
+              "best_candidate_iou_at_conf025": 0.5541368743615934,
+              "best_candidate_prediction_index": 7
+            }
+          ]
+        },
+        {
+          "model": "YOLOv8n-Seg",
+          "prediction_sha256": "b538ecb32b054d4f2b3ff718d89d788f1038d613e309c3a8b303fc70922fe1dc",
+          "full_frame_counts": {
+            "tp": 8,
+            "fp": 4,
+            "fn": 4,
+            "ignored_predictions": 2
+          },
+          "target_gt": [
+            {
+              "gt_id": 2026,
+              "matched": true,
+              "matched_iou": 0.6405472636815921,
+              "best_candidate_iou_at_conf025": 0.6405472636815921,
+              "best_candidate_prediction_index": 11
+            },
+            {
+              "gt_id": 2040,
+              "matched": true,
+              "matched_iou": 0.5347976307996052,
+              "best_candidate_iou_at_conf025": 0.5347976307996052,
+              "best_candidate_prediction_index": 9
+            }
+          ]
+        }
+      ],
+      "focus_path": "case_03_focus.png",
+      "focus_sha256": "62ec54c09ac5403bdb8b909fe71a0bd5dff9e0edb7c507e8d7e97c5ac43f3d42",
+      "focus_size": [
+        1440,
+        1928
+      ]
+    },
+    {
+      "sequence": "MOTS20-09",
+      "frame": 1,
+      "regions": [
+        {
+          "target_gt_ids": [],
+          "xyxy": [
+            154,
+            302,
+            653,
+            810
+          ]
+        },
+        {
+          "target_gt_ids": [
+            2019
+          ],
+          "xyxy": [
+            1334,
+            358,
+            1920,
+            762
+          ]
+        }
+      ],
+      "comparison_sha256": "3f496bdfe2658cebbcf5a70cddc1be5ea2b4dcd267cca18010dfeba82843b77d",
+      "image_sha256": "e4b1c40c44d53489f191e1099156ad57d3963d8c434615750fba0065a8a572af",
+      "gt_sha256": "73c59a3d52469d81084f99c7e2a0c711a99e9fb4152f6aa839fc26e5e03fa383",
+      "models": [
+        {
+          "model": "YOLO26n-Seg",
+          "prediction_sha256": "b07c0cbf06145ec99dcdc08ccea6031e8faa9f2b27e89d5650cb98681332d70d",
+          "full_frame_counts": {
+            "tp": 6,
+            "fp": 1,
+            "fn": 0,
+            "ignored_predictions": 1
+          },
+          "target_gt": [
+            {
+              "gt_id": 2019,
+              "matched": true,
+              "matched_iou": 0.8205411374930978,
+              "best_candidate_iou_at_conf025": 0.8205411374930978,
+              "best_candidate_prediction_index": 0
+            }
+          ]
+        },
+        {
+          "model": "YOLO11n-Seg",
+          "prediction_sha256": "5c00509745e267f039af6b8e4fc7523b598d43d9f961941324a40792cc90e1e4",
+          "full_frame_counts": {
+            "tp": 6,
+            "fp": 0,
+            "fn": 0,
+            "ignored_predictions": 2
+          },
+          "target_gt": [
+            {
+              "gt_id": 2019,
+              "matched": true,
+              "matched_iou": 0.7949023046092184,
+              "best_candidate_iou_at_conf025": 0.7949023046092184,
+              "best_candidate_prediction_index": 0
+            }
+          ]
+        },
+        {
+          "model": "YOLOv8n-Seg",
+          "prediction_sha256": "a7d380e680907a42ce4fae7f8b0b58e869d607f4442c4954dae10f7d8c33ecac",
+          "full_frame_counts": {
+            "tp": 6,
+            "fp": 2,
+            "fn": 0,
+            "ignored_predictions": 1
+          },
+          "target_gt": [
+            {
+              "gt_id": 2019,
+              "matched": true,
+              "matched_iou": 0.614022280763005,
+              "best_candidate_iou_at_conf025": 0.7926687780251481,
+              "best_candidate_prediction_index": 6
+            }
+          ]
+        }
+      ],
+      "focus_path": "case_04_focus.png",
+      "focus_sha256": "678d256913dee5e5ef33528b77d4c97dcfa87e3e15472491ddb51babed089a01",
+      "focus_size": [
+        1440,
+        1928
+      ]
+    }
+  ]
+}
